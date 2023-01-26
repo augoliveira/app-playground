@@ -1,6 +1,6 @@
 import { Boundary } from '#/ui/Boundary';
 import CountUp from '#/ui/CountUp';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 type Item = {
   name: string;

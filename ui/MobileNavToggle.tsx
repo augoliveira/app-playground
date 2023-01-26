@@ -1,7 +1,7 @@
 'use client';
 
 import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import React from 'react';
 
 const MobileNavContext = React.createContext<

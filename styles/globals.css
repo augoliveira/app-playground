@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.inset {
+  position: absolute;
+  inset: 0;
+}
+
+.white {
+  color: white;
+}
+.gray {
+  color: #446;
+}
+
+.full {
+  height: 100vh;
+  z-index: -1;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient {
+  background: linear-gradient(rgba(14, 62, 151, 0.5) 50%, black);
+}
+
+  .green{
+  background: linear-gradient(160.44deg, #ffeb6b 1.37%, #fcb93d 58.45%);
+    background-clip: text;
+    font-family: montserrat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
