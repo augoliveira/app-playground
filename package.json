@@ -10,8 +10,6 @@
     "prettier:check": "prettier --check --ignore-unknown .",
     "start": "next start",
     "test": "yarn prettier:check && yarn lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "prepare": "husky install"
   },
   "git": {
@@ -36,19 +34,12 @@
     "react-icons": "^4.7.1",
     "react-scroll-parallax": "3.3.2",
     "styled-components": "6.0.0-beta.2",
+    "swc-loader": "0.2.3",
     "typewriter-effect": "^2.19.0",
     "use-count-up": "3.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
-    "@storybook/addon-actions": "6.5.16",
-    "@storybook/addon-essentials": "6.4.22",
-    "@storybook/addon-interactions": "6.5.16",
-    "@storybook/addon-links": "6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/react": "6.1.21",
-    "@storybook/testing-library": "0.0.13",
     "@types/ms": "0.7.31",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
@@ -71,7 +62,6 @@
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-standard": "^4.1.0",
-    "eslint-plugin-storybook": "0.6.10",
     "husky": "8.0.3",
     "lint-staged": "13.1.0",
     "postcss": "8.4.21",

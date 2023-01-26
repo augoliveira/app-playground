@@ -6,6 +6,7 @@ const nextConfig = {
     // Required:
     appDir: true,
   },
+  transpilePackages: ['@acme/ui', 'lodash-es'],
 };
 
 module.exports = nextConfig;
