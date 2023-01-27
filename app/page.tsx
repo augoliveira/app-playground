@@ -6,7 +6,7 @@ import Dashboard from '#/ui/Components/templates/Dashboard';
 export default function Page() {
   return (
 
-      <><Dashboard /><Demos /></>
+      <><Demos /></>
 
   );
 }

@@ -31,7 +31,9 @@ export default function RootLayout({
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black/30 p-3.5 backdrop-blur-sm lg:p-6"> <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+              <div className="rounded-lg bg-black/30 p-3.5 backdrop-blur-sm lg:p-6"> 
+              
+              <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
                 <GlobalStyle /></div>
             </div>
 
