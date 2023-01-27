@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
+import { ExternalLink } from '#/ui/ExternalLink';
 import { useRouter } from 'next/navigation';
 import addParlx from '#/app/common/addParlx'
 import initIsotope from '#/app/common/initIsotope'
@@ -121,25 +122,17 @@ const Demos = () => {
                     }}
                   />
                   <div className="mt-5">
-                  <button type="button" onClick={() => router.push('/dashboard')}>
-      Dashboard
-    </button>
-                    <button className="primary__btn">
-                      <Link href="#">Fale conosco</Link>
-                    </button>
-
-                    <button
-                      className="secondary__btn"
+                  <button
                       type="button"
                       onClick={handleClick}
                     >
-                      <Link href="https://wzap.me/121844149042">WhatsApp</Link>
-                    </button>
+                      <ExternalLink href="https://wzap.me/121844149042">WhatsApp</ExternalLink>
+                  </button>
                   </div>
                 </div>
                 <div className="bactxt custom-font valign">
                   <span className="full-width" style={{ color: 'transparent' }}>
-                    UP
+                    Agência
                   </span>
                 </div>
               </div>

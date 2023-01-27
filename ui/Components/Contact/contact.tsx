@@ -32,7 +32,7 @@ export function Contact() {
               <WhatsappLogo size={22} color="#00fffb" /> WhatsApp{' '}
             </h4>
             <Link
-              href="https://api.whatsapp.com/send?phone=5561986692775"
+              href="https://wzap.me/121844149042"
               target="_blank"
             >
               <span>(61) 9 8669-2775)</span>

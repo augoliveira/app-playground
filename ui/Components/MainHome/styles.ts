@@ -15,6 +15,10 @@ export const Wrapper = styled.main`
   margin-top: -100px;
   color: #fff;
   z-index: 1;
+  @media (max-width: 970px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 export const Logo = styled.div`
   margin-bottom: 2rem;
@@ -27,6 +31,11 @@ export const Logo = styled.div`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
+  @media (max-width: 970px) {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Description = styled.h2`
@@ -50,6 +59,10 @@ export const Description = styled.h2`
   box-shadow: inset 10px 10px 20px rgba(255, 255, 255, 0.2);
   position: relative;
   z-index: 1;
+  @media (max-width: 970px) {
+    width: 100%;
+    font-size: 2rem;
+  }
 
   @media (max-width: 375px) {
     font-size: 2.8rem;

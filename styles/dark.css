@@ -1,57 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Avo
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: ThemesCamp
-    Author URI: http://themeforest.net/user/ThemesCamp
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-
-== Table Of Content
-
-    |--- BASE
-
-        |- typography
-        |- helper classes
-
-    |--- SHORTCODES
-
-        |- extra
-        |- overlay
-        |- section-heading
-        |- buttons
-        |- navbar
-        |- sliders
-        |- intro
-        |- feature-box
-        |- clients
-        |- counter
-        |- portfolio
-        |- process
-        |- progress-bar
-        |- tabs
-        |- team
-        |- testimonials
-        |- blog
-        |- contact-form
-        |- footers
-
-    |--- BASE
-
-        |- responsive
-
-
-
----------------------------------------------------------------- */
-/* ====================== [ Start Typography  ] ====================== */
-
-
-
-@import "/styles/all.css";
-
 
 html {
   scrollbar-width: thin;
@@ -145,14 +91,6 @@ html {
     background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   }
-body {
-  color: #fff;
-  background: #0c0f16;
-  line-height: 1.5;
-  font-weight: 400;
-  overflow-x: hidden !important;
-  font-family: "Poppins", sans-serif;
-}
 
 img {
   width: 100%;
@@ -298,18 +236,6 @@ span:hover {
   background-repeat: repeat;
 }
 
-.section-padding {
-  padding: 120px 0;
-  margin: 20px ;
-}
-
-.section-ptb {
-  padding: 80px 0;
-}
-
-.cmd-padding {
-  padding: 0 10px;
-}
 
 .csm-padding {
   padding: 0 5px;
@@ -826,9 +752,7 @@ span:hover {
   padding-top: 15px !important;
 }
 
-.pt-20 {
-  padding-top: 20px !important;
-}
+
 
 .pt-25 {
   padding-top: 25px !important;

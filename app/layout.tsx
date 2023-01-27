@@ -1,5 +1,6 @@
 import '#/styles/globals.css';
 import '#/styles/dark.css';
+import '/styles/all.css';
 
 import { AddressBar } from '#/ui/AddressBar';
 import { GlobalNav } from '#/ui/GlobalNav';
@@ -20,10 +21,9 @@ export default function RootLayout({
       <head />
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
         <GlobalNav />
-        <ScrollTop />
-        <Cursor />
+        
         <div className="lg:pl-56">
-          <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
+        <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <div className="rounded-lg bg-black">
                 <AddressBar />
@@ -31,6 +31,8 @@ export default function RootLayout({
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
+              <ScrollTop />
+              <Cursor />
               <div className="rounded-lg bg-black/30 p-3.5 backdrop-blur-sm lg:p-6"> 
               
               <StyledComponentsRegistry>{children}</StyledComponentsRegistry>

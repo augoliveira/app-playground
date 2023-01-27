@@ -4,11 +4,16 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 80%;
   max-width: 1280px;
+  margin: 0 auto;
+  
   display: flex;
   gap: 2rem;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  @media (max-width: 970px) {
+    width: 100%;
+  }
   > img {
     width: 40rem;
     flex: 1;
@@ -47,6 +52,9 @@ export const TextContainer = styled.section`
   background-position: 520px 20px;
   margin-bottom: 2rem;
   width: 40%;
+  @media (max-width: 970px) {
+    width: 100%;
+  }
 
   h1 {
     font-size: 8rem;
