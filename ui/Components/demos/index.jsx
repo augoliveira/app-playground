@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-<<<<<<< HEAD
 
 import { ExternalLink } from '#/ui/ExternalLink.tsx';
 import addParlx from '#/app/common/addParlx'
@@ -33,47 +32,13 @@ const Wrapper = styled.div`
   height: 100%;
   position: fixed;
   background-color: transparent;
-=======
-import { ExternalLink } from '#/ui/ExternalLink';
-import { useRouter } from 'next/navigation';
-import addParlx from '#/app/common/addParlx'
-import initIsotope from '#/app/common/initIsotope'
-import MainHome from '#/ui/Components/MainHome'
-import Image from 'next/image'
-import bg from "/public/assets/bg-slide2.jpg"
-import dynamic from 'next/dynamic'
-import styled from "styled-components";
-import Link from 'next/link'
-import React from 'react'
-
-const Wrapper = styled.div`
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: fixed;
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
   justify-content: center;
   align-items: center;
   display: flex;
 `
 
-<<<<<<< HEAD
 
 const Demos = () => {
-=======
-const BackgroundImage = dynamic(
-  () => import('#/ui/Components/BG/BackgroundImage'),
-  {
-    ssr: false
-  }
-)
-
-import Typewriter from 'typewriter-effect'
-
-
-const Demos = () => {
-  const router = useRouter();
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
   const handleClick = () => {
     fbq.event('Purchase', { currency: 'USD', value: 10 })
   }
@@ -101,32 +66,22 @@ const Demos = () => {
       document.querySelector('body').style.backgroundColor = '#181b21'
     }
   }, [pageLoaded])
-<<<<<<< HEAD
   const [displayImage, setDisplayImage] = useState(true);
 
   useEffect(() => {
     setDisplayImage(false);
   }, []);
   
-=======
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
 
   return (
     <>
       <header
         ref={fixedHeader}
         className="works-header fixed-slider hfixd valign bg-img1"
-<<<<<<< HEAD
         data-overlay-dark="4"
       >
         <Image
           src={Bg}
-=======
-        data-overlay-dark="5"
-      >
-        <Image
-          src={bg}
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
           alt="Picture of the author"
           fill
           placeholder="blur"
@@ -150,18 +105,13 @@ const Demos = () => {
                       className="klickart-font"
                       style={{ color: `#251867` }}
                     >
-<<<<<<< HEAD
                       <b className="medium-b">O que a </b>
-=======
-                      <b className="medium-b">AGÈNCIA </b>
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
                       <font
                         className="klickart-font"
                         style={{ color: `rgb(255, 255, 255)` }}
                       >
                         <b className="medium-b">UP</b>
                       </font>
-<<<<<<< HEAD
                       <b className="medium-b"> faz?</b>
                     </font>
                   </h2>
@@ -172,19 +122,10 @@ const Demos = () => {
                   <Typewriter
                     options={{
                       wrapperclassName: 'color-font fw-900',
-=======
-                      <b className="medium-b"> EXPERT</b>
-                    </font>
-                  </h2>
-                  <Typewriter
-                    options={{
-                      wrapperClassName: 'color-font fw-900',
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
                       strings: [
                         'Desenvolvimento de marca',
                         'Comunicação digital',
                         'Grafica e impressos',
-<<<<<<< HEAD
                         'Desenvolvimento de sites, landing page',
                       ],
                       autoStart: true,
@@ -193,16 +134,6 @@ const Demos = () => {
                     loop={true}
                     onInit={(typewriter) => {
                       typewriter;
-=======
-                        'Desenvolvimento de sites, landing page'
-                      ],
-                      autoStart: true,
-                      loop: true
-                    }}
-                    loop={true}
-                    onInit={(typewriter) => {
-                      typewriter
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
                     }}
                   />
                   <div className="mt-5">
@@ -216,11 +147,7 @@ const Demos = () => {
                 </div>
                 <div className="bactxt custom-font valign">
                   <span className="full-width" style={{ color: 'transparent' }}>
-<<<<<<< HEAD
                     UP
-=======
-                    Agência
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
                   </span>
                 </div>
               </div>
@@ -228,7 +155,6 @@ const Demos = () => {
           </div>
         </div>
       </header>
-<<<<<<< HEAD
       <div className="main-content" ref={MainContent}>
       <section id="cases">
       <div className="conteudo-fluid">
@@ -636,14 +562,3 @@ const Demos = () => {
 
 export default Demos
 
-=======
-
-      <div className="main-content" ref={MainContent}>
-          <MainHome />
-      </div>
-    </>
-  )
-}
-
-export default Demos
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4

@@ -38,14 +38,11 @@ export const ContactContent = styled.div`
       margin-bottom: 8px;
     }
 
-<<<<<<< HEAD
     h2 {
       font-size: 1.3rem;
       margin-bottom: 8px;
     }
 
-=======
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
     span {
       color: var(--text-secondary);
       &:hover {

@@ -9,10 +9,6 @@ export function DefaultTags() {
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
-<<<<<<< HEAD
-=======
-      <meta http-equiv="x-ua-compatible" content="ie=edge" />
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
       <meta name="robots" content="all" />
       <meta name="rating" content="general" />
       <meta name="googlebot" content="all" />
@@ -78,7 +74,6 @@ export function DefaultTags() {
         rel="mask-icon"
       />
       <link href="/favicon/favicon.ico" rel="shortcut icon" />
-
     </>
   )
 }

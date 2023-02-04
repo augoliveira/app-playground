@@ -28,15 +28,9 @@ export function Contact() {
 
         <ContactContent>
           <div className="contact-content">
-<<<<<<< HEAD
             <h2>
               <WhatsappLogo size={22} color="#00fffb" /> WhatsApp{' '}
             </h2>
-=======
-            <h4>
-              <WhatsappLogo size={22} color="#00fffb" /> WhatsApp{' '}
-            </h4>
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
             <Link
               href="https://wzap.me/121844149042"
               target="_blank"
@@ -46,32 +40,19 @@ export function Contact() {
           </div>
 
           <div className="contact-content">
-<<<<<<< HEAD
             <h2>
               {' '}
               <TelegramLogo size={22} color="#00fffb" /> Email{' '}
             </h2>
-=======
-            <h4>
-              {' '}
-              <TelegramLogo size={22} color="#00fffb" /> Email{' '}
-            </h4>
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
             <Link href="mailto:contato@upexpert.com.br" target="_blank">
               <span>contato@upexpert.com.br</span>
             </Link>
           </div>
 
           <div className="contact-content">
-<<<<<<< HEAD
             <h2>
               <MapPin size={22} color="#00fffb" /> Localização
             </h2>
-=======
-            <h4>
-              <MapPin size={22} color="#00fffb" /> Localização
-            </h4>
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
             <span>QUADRA 6, SALA 501 - Asa Sul, Brasília - DF</span>
           </div>
         </ContactContent>

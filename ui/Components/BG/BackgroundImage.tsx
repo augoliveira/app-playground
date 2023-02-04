@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 'use client';
-=======
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";

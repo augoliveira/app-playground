@@ -1,7 +1,6 @@
 import '#/styles/globals.css';
 import '#/styles/dark.css';
 import '/styles/all.css';
-<<<<<<< HEAD
 import '/public/assets/dinamite/css/mqueries.css';
 import '/public/assets/dinamite/css/animate.css';
 import '/public/assets/dinamite/css/modal.css';
@@ -10,8 +9,6 @@ import '/public/assets/dinamite/lib/selectFx/cs-skin-border.css';
 import '/public/assets/dinamite/css/estilo.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-=======
->>>>>>> ab07b03607cbdec6c05b0829a3d0babf9cf042d4
 
 import { AddressBar } from '#/ui/AddressBar';
 import { GlobalNav } from '#/ui/GlobalNav';
