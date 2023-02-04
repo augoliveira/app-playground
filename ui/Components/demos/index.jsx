@@ -5,7 +5,7 @@ import { ExternalLink } from '#/ui/ExternalLink.tsx';
 import addParlx from '#/app/common/addParlx'
 import initIsotope from '#/app/common/initIsotope'
 import dynamic from 'next/dynamic';
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
@@ -83,14 +83,8 @@ const Demos = () => {
         <Image
           src={Bg}
           alt="Picture of the author"
-          fill
           placeholder="blur"
-          blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-        quality={100}
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
+          layout="fill" objectFit="cover"
         />
         <div className="container">
           <div className="row justify-content-center">
@@ -200,12 +194,8 @@ const Demos = () => {
             src={Case1}
               alt="Picture of the author"
               placeholder="blur"
-              blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-              quality={100}
-              sizes="100vw"
-              style={{
-                objectFit: 'cover',
-              }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -229,12 +219,8 @@ const Demos = () => {
               src={Case2}
               alt="Picture of the author"
               placeholder="blur"
-              blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-              quality={100}
-              sizes="100vw"
-              style={{
-                objectFit: 'cover',
-              }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -258,12 +244,8 @@ const Demos = () => {
             src={Case3}
               alt="Picture of the author"
               placeholder="blur"
-              blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-              quality={100}
-              sizes="100vw"
-              style={{
-                objectFit: 'cover',
-              }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -287,12 +269,8 @@ const Demos = () => {
             src={Case4}
               alt="Picture of the author"
               placeholder="blur"
-              blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-              quality={100}
-              sizes="100vw"
-              style={{
-                objectFit: 'cover',
-              }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -316,12 +294,8 @@ const Demos = () => {
                 src={Case5}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
             </div>
           <div className="case-hover">
@@ -345,12 +319,8 @@ const Demos = () => {
                 src={Case6}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -376,12 +346,8 @@ const Demos = () => {
                 src={Case7}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -405,12 +371,8 @@ const Demos = () => {
                 src={Case8}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -434,12 +396,8 @@ const Demos = () => {
                 src={Case9}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
           </div>
           <div className="case-hover">
@@ -463,12 +421,8 @@ const Demos = () => {
                 src={Case10}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
             </div>
           <div className="case-hover">
@@ -492,12 +446,8 @@ const Demos = () => {
                 src={Case11}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
             </div>
           <div className="case-hover">
@@ -521,12 +471,8 @@ const Demos = () => {
                 src={Case12}
                 alt="Picture of the author"
                 placeholder="blur"
-                blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-                quality={100}
-                sizes="100vw"
-                style={{
-                  objectFit: 'cover',
-                }}
+                width={653}
+                height={499}
             />
             </div>
           <div className="case-hover">
