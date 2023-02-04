@@ -30,6 +30,10 @@ module.exports = {
           'colors.gray.500',
         )}, 50px, ${theme('colors.gray.800')} 50%)`,
       }),
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       keyframes: ({ theme }) => ({
         rerender: {
           '0%': {
