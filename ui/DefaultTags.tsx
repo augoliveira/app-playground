@@ -74,6 +74,16 @@ export function DefaultTags() {
         rel="mask-icon"
       />
       <link href="/favicon/favicon.ico" rel="shortcut icon" />
+      <Script src="https://code.jquery.com/jquery-3.3.1.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></Script>
+      <Script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></Script>
+      <Script src="/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"></Script>
+
+      <Script src="../public/assets/dinamite/js/main.js" type="text/javascript"></Script>
+      <Script src="../public/assets/dinamite/js/home.js" type="text/javascript"></Script>
+      <Script src="../public/assets/dinamite/js/carregamento-lote.js" type="text/javascript"></Script>
+      <Script src="../public/assets/dinamite/js/parallax.js"></Script>
     </>
   )
 }
