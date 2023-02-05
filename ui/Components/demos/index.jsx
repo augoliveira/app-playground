@@ -77,7 +77,7 @@ const Demos = () => {
     <>
       <header
         ref={fixedHeader}
-        className="works-header fixed-slider hfixd valign bg-img1"
+        className="works-header fixed-slider hfixd valign bg-img"
         data-overlay-dark="4"
       >
         <Image
@@ -501,6 +501,7 @@ const Demos = () => {
       </div>
       <br />
     </section>
+    
       </div>
     </>
   );

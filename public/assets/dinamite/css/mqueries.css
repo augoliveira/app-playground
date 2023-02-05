@@ -7,8 +7,8 @@
 				   and (max-device-width:1024px) and (orientation : landscape) {
 
 	/* ------ Estrutura Geral e Home ------ */
-	body { min-width: 660px; }
-	.conteudo {width: 640px !important;}
+	body { min-width: 100vh; }
+	.conteudo {width: 640% !important;}
 
 	section#home .conteudo-fluid nav#redes-fixed,
 	#banner .owl-dots { display: none; }
@@ -29,7 +29,7 @@
 		margin: 0 auto;
 		float: none;
 		margin-top: 0;
-		width: 640px;
+		width: 640%;
 	}
 
 	section#cases .conteudo-fluid header nav ul li,
@@ -39,7 +39,7 @@
 		padding: 14px 16px 15px 11px;
 	}
 
-	section#cases #container .case { width: 50%; }
+	section#cases #container .case { width: 100%; }
 
 	/*SOBRE*/
 	section#sobre {

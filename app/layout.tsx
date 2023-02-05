@@ -41,8 +41,10 @@ export default function RootLayout({
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <ScrollTop />
               <Cursor />
-              <div className="rounded-lg bg-black/30 p-3.5 backdrop-blur-sm lg:p-6"> {children}
-                <GlobalStyle /></div>
+              <div className="rounded-lg bg-black/30 p-3.5 backdrop-blur-sm lg:p-6"> 
+              <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+                <GlobalStyle />
+                </div>
             </div>
             <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">

@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image from 'next/legacy/image'
 import styled from "styled-components";
-import bg from "/public/assets/bg-slide2.jpg"
+import bg from "/public/img/face.jpg"
 
 
 const Box = styled.div`
@@ -12,7 +12,7 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
-  z-index: -3;
+  z-index: 1;
 `
 
 function getWindowDimensions() {

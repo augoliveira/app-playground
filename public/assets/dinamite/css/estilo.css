@@ -550,9 +550,10 @@ section#cases .conteudo-fluid button#ver-mais-home:hover {
 
 /*SOBRE*/
 section#sobre {
-	background: url(/assets/dinamite/img/face.jpg) no-repeat center;
+	background: url(../../../img/face.webp) no-repeat center;
   background-size: auto;
 	height: 94vh;
+	z-index: 1;
 }
 
 section#sobre .conteudo article {
