@@ -10,8 +10,8 @@ export const demos: { name: string; items: Item[] }[] = [
     items: [
       {
         name: 'MARKETING',
-        slug: 'layouts',
-        description: 'Create UI that is shared across routes',
+        slug: 'websites',
+        description: 'Desenvolvimento de websites, landing pages, lojas virtual',
       },
       {
         name: 'Grouped Layouts',
@@ -27,10 +27,10 @@ export const demos: { name: string; items: Item[] }[] = [
     ],
   },
   {
-    name: 'File Conventions',
+    name: 'SOBRE A AGÊNCIA',
     items: [
       {
-        name: 'Loading',
+        name: 'O QUE FAZEMOS',
         slug: 'loading',
         description:
           'Create meaningful loading UI for specific parts of an app',

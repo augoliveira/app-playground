@@ -3,7 +3,7 @@ import { ClickCounter } from '#/ui/ClickCounter';
 import { TabGroup } from '#/ui/TabGroup';
 import React from 'react';
 
-export default async function Layout({
+export default async function Websites({
   children,
 }: {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ export default async function Layout({
     <div className="space-y-9">
       <div className="flex justify-between">
         <TabGroup
-          path="/layouts"
+          path="/websites"
           items={[
             {
               text: 'Home',

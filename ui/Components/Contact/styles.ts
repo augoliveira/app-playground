@@ -6,9 +6,11 @@ export const ContainerContact = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 `;
 
 export const ContactContent = styled.div`
+width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -34,11 +36,6 @@ export const ContactContent = styled.div`
     align-items: flex-start;
 
     h4 {
-      font-size: 1.3rem;
-      margin-bottom: 8px;
-    }
-
-    h2 {
       font-size: 1.3rem;
       margin-bottom: 8px;
     }
@@ -108,9 +105,5 @@ export const Form = styled.form`
     background-color: var(--background);
     padding: 0 0.8em;
     color: var(--first-color);
-  }
-  code {
-    font-family: var(--font-mono);
-    font-size: var(--fz-md);
   }
 `;

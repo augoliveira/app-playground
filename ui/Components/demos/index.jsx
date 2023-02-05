@@ -27,14 +27,8 @@ import Case12 from '/public/assets/dinamite/Gestor/upoads/cases/12.jpg'
 
 
 const Wrapper = styled.div`
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  z-index: -999;
+  
 `
 
 
@@ -80,12 +74,14 @@ const Demos = () => {
         className="works-header fixed-slider hfixd valign bg-img"
         data-overlay-dark="4"
       >
+      <Wrapper>
         <Image
           src={Bg}
           alt="Picture of the author"
           placeholder="blur"
           layout="fill" objectFit="cover"
         />
+        </Wrapper>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">

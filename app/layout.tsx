@@ -7,7 +7,6 @@ import '/public/assets/dinamite/css/modal.css';
 import '/public/assets/dinamite/lib/selectFx/cs-select.css';
 import '/public/assets/dinamite/lib/selectFx/cs-skin-border.css';
 import '/public/assets/dinamite/css/estilo.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
 
 import { AddressBar } from '#/ui/AddressBar';

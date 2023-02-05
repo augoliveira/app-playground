@@ -25,6 +25,17 @@ module.exports = {
           violet: '#7928CA',
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+      screens: {
+        xs: "480px",
+        ss: "620px",
+        sm: "768px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
+      },
       backgroundImage: ({ theme }) => ({
         'vc-border-gradient': `radial-gradient(at left top, ${theme(
           'colors.gray.500',
