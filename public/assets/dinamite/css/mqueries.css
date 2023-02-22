@@ -20,6 +20,8 @@
 	section#cases {
 		text-align: center;
 		padding: 70px 0 75px;
+		display: block;
+		flex-wrap: wrap;
 	}
 
 	section#cases .conteudo-fluid header { padding-bottom: 30px; }
@@ -51,7 +53,7 @@
 		float: none;
 		margin: 0 auto;
 		padding-top: 50px;
-		width: 100%;
+		width: 630px;
 	}
 
 	/*ESPECIALIDADES*/
@@ -278,7 +280,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-    	height: 280px;
+    height: 280px;
 	}
 
 	section#cases #container .case .case-hover {

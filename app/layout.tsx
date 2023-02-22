@@ -26,25 +26,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="[color-scheme:dark]">
       <head />
-      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
-        <GlobalNav />
+      <body className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}>
         
-        <div className="lg:pl-56">
-        <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
-            <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">
-                <AddressBar />
-              </div>
-            </div>
-
-            <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <ScrollTop />
+        <ScrollTop />
               <Cursor />
-              <div className="rounded-lg bg-black/30 p-3.5 backdrop-blur-sm lg:p-6"> 
+            <div className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
+              <div className=""> 
               <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
                 <GlobalStyle />
                 </div>
             </div>
+            <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
             <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <div className="rounded-lg bg-black/30 backdrop-blur-xl">
@@ -53,7 +45,7 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        </div>
+
       </body>
     </html>
   );

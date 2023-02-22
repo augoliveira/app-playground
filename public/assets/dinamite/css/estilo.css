@@ -448,7 +448,9 @@ section#cases #container { height: auto !important; }
 section#cases #container .case {
 	cursor: pointer;
 	float: left;
-	width: 33.33%
+	width: 33.33%;
+	flex-wrap: wrap;
+	
 }
 
 
@@ -560,7 +562,7 @@ section#sobre .conteudo article {
 	margin-top: 5rem;
 	float: right;
 
-	width: 630px;
+	width: 100%;
 }
 
 section#sobre .conteudo article h2 {

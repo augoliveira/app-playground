@@ -6025,10 +6025,10 @@ body {
   }
   .slider.fixed-slider,
   .works-header.hfixd {
-    position: static;
+    position: fixed;
   }
   .main-content {
-    margin-top: 0 !important;
+    margin-top: 20rem !important;
   }
   .about .img-mons .img1,
   .about .img-mons .img2,
