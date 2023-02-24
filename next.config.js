@@ -3,8 +3,16 @@ const nextConfig = {
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   swcMinify: true,
   experimental: {
-    // Required:
+    turbo: {
+      loaders: {
+        '.svg': ['@svgr/webpack'],
+      },
+    },
     appDir: true,
+    typedRoutes: true,
+    fontLoaders: [
+      { loader: 'next/font/google', options: { subsets: ['latin'] } },
+    ],
   },
 };
 

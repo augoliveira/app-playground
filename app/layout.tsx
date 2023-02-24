@@ -1,7 +1,23 @@
 import '#/styles/globals.css';
+import '#/styles/dark.css';
+import '/styles/all.css';
+import '/public/assets/dinamite/css/mqueries.css';
+import '/public/assets/dinamite/css/animate.css';
+import '/public/assets/dinamite/css/modal.css';
+import '/public/assets/dinamite/lib/selectFx/cs-select.css';
+import '/public/assets/dinamite/lib/selectFx/cs-skin-border.css';
+import '/public/assets/dinamite/css/estilo.css';
+import GlobalStyle from '#/styles/GlobalStyle';
 import { AddressBar } from '#/ui/address-bar';
 import { GlobalNav } from '#/ui/global-nav';
 import { VercelLogo } from '#/ui/vercel-logo';
+import Link from 'next/link';
+
+
+import StyledComponentsRegistry from './styling/styled-components/registry';
+import ScrollTop from '#/ui/ScrollTop';
+import Cursor from '#/ui/Cursor';
+import Heropage from '#/ui/Components/sections/Heropage';
 
 export default function RootLayout({
   children,
@@ -12,22 +28,27 @@ export default function RootLayout({
     <html lang="en" className="[color-scheme:dark]">
       <head />
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
+      <ScrollTop />
+              <Cursor />
         <GlobalNav />
 
-        <div className="lg:pl-72">
-          <div className="mx-auto max-w-4xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
+        <div className="lg:pl-56">
+          <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <div className="rounded-lg bg-black">
                 <AddressBar />
               </div>
             </div>
 
-            <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black p-3.5 lg:p-6">{children}</div>
+            <div className="">
+              <div className=" p-3.5 lg:p-6">
+
+                <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+                <GlobalStyle /></div>
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">
+              <div className="rounded-lg bg-black/30 backdrop-blur-xl">
                 <Byline />
               </div>
             </div>
@@ -42,30 +63,31 @@ function Byline() {
   return (
     <div className="flex items-center justify-between gap-x-4 p-3.5 lg:px-5 lg:py-3">
       <div className="flex items-center gap-x-1.5">
-        <div className="text-sm text-gray-400">By</div>
-        <a href="https://vercel.com" title="Vercel">
+        <Link href="https://upexpert.com.br" title="up.expert">
           <div className="w-16 text-gray-100 hover:text-gray-50">
             <VercelLogo />
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className="text-sm text-gray-400">
-        <a
-          className="underline decoration-dotted underline-offset-4 hover:text-gray-400"
-          href="https://github.com/vercel/app-playground"
+        <Link
+          className="text-orange-500 hover:text-gray-400"
+          href="https://upexpert.com.br"
           target="_blank"
+          rel="noreferrer"
         >
-          View code
-        </a>
-        {' or '}
-        <a
+          Marketing
+        </Link>
+        {' / '}
+        <Link
           className="underline decoration-dotted underline-offset-4 hover:text-gray-400"
-          href="https://vercel.com/templates/next.js/app-directory"
+          href="https://upexpert.com.br/design"
           target="_blank"
+          rel="noreferrer"
         >
-          deploy your own
-        </a>
+          Design Estratégico
+        </Link>
       </div>
     </div>
   );
