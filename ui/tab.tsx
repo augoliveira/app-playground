@@ -1,7 +1,12 @@
 'use client';
 
+<<<<<<< HEAD:ui/tab.tsx
 import type { Item } from '#/ui/tab-group';
 import clsx from 'clsx';
+=======
+import type { Item } from '#/ui/TabGroup';
+import { clsx } from 'clsx';
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20:ui/Tab.tsx
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 

@@ -1,5 +1,10 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
+<<<<<<< HEAD
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.indentSize": "tabSize"
 }
+=======
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20

@@ -280,7 +280,11 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+<<<<<<< HEAD
     height: 100%;
+=======
+    height: 280px;
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 	}
 
 	section#cases #container .case .case-hover {

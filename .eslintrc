@@ -1,6 +1,10 @@
 {
   "root": true,
+<<<<<<< HEAD
   "extends": ["airbnb-base", "plugin:jest/recommended"],
+=======
+  "extends": ["airbnb-base", "plugin:eslint-plugin/recommended"],
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
   "plugins": ["eslint-plugin"],
   "env": {
     "es6": true,
@@ -67,4 +71,8 @@
       }
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20

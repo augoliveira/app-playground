@@ -7,6 +7,7 @@ import '/public/assets/dinamite/css/modal.css';
 import '/public/assets/dinamite/lib/selectFx/cs-select.css';
 import '/public/assets/dinamite/lib/selectFx/cs-skin-border.css';
 import '/public/assets/dinamite/css/estilo.css';
+<<<<<<< HEAD
 import GlobalStyle from '#/styles/GlobalStyle';
 import { AddressBar } from '#/ui/address-bar';
 import { GlobalNav } from '#/ui/global-nav';
@@ -18,6 +19,18 @@ import StyledComponentsRegistry from './styling/styled-components/registry';
 import ScrollTop from '#/ui/ScrollTop';
 import Cursor from '#/ui/Cursor';
 import Heropage from '#/ui/Components/sections/Heropage';
+=======
+
+
+import { AddressBar } from '#/ui/AddressBar';
+import { GlobalNav } from '#/ui/GlobalNav';
+import { VercelLogo } from '#/ui/VercelLogo';
+import ScrollTop from '#/ui/ScrollTop'
+import Cursor from '#/ui/Cursor'
+import Link from 'next/link';
+import StyledComponentsRegistry from './styling/styled-components/registry';
+import GlobalStyle from '#/styles/GlobalStyle';
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 
 export default function RootLayout({
   children,
@@ -27,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="[color-scheme:dark]">
       <head />
+<<<<<<< HEAD
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
       <ScrollTop />
               <Cursor />
@@ -47,6 +61,20 @@ export default function RootLayout({
                 <GlobalStyle /></div>
             </div>
 
+=======
+      <body className={`relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]`}>
+        
+        <ScrollTop />
+              <Cursor />
+            <div className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
+              <div className=""> 
+              <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+                <GlobalStyle />
+                </div>
+            </div>
+            <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
+            <div className="mx-auto max-w-8xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <div className="rounded-lg bg-black/30 backdrop-blur-xl">
                 <Byline />
@@ -54,6 +82,7 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+
       </body>
     </html>
   );

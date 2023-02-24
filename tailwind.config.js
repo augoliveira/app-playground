@@ -47,6 +47,7 @@ module.exports = {
         "grey-dark": "#222326",
         "primary-text": "#b4bcd0",
       },
+<<<<<<< HEAD
       boxShadow: {
         "custom-light": " 0 0 10px #313131",
         "custom-dark": "5px 5px 10px #0a0c0e , -5px -5px 10px #14161c",
@@ -59,11 +60,28 @@ module.exports = {
       grey: "#858699",
       "grey-dark": "#222326",
       "primary-text": "#b4bcd0",
+=======
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+      screens: {
+        xs: "480px",
+        ss: "620px",
+        sm: "768px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
+      },
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
       backgroundImage: ({ theme }) => ({
         'vc-border-gradient': `radial-gradient(at left top, ${theme(
           'colors.gray.500',
         )}, 50px, ${theme('colors.gray.800')} 50%)`,
       }),
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       keyframes: ({ theme }) => ({
         rerender: {
           '0%': {
@@ -209,5 +227,7 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp')],
+  plugins: [require('@tailwindcss/forms'), 
+  require('@tailwindcss/line-clamp'), 
+  require('@tailwindcss/aspect-ratio'),],
 };

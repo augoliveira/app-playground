@@ -440,7 +440,11 @@ section#cases .conteudo-fluid header nav ul li:hover,
 section#cases .conteudo-fluid header nav ul li.ativo {
 	border-bottom: 1px solid #ffcc00;
 	color: #ffcc00;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 }
 
 section#cases #container { height: auto !important; }
@@ -449,9 +453,14 @@ section#cases #container .case {
 	cursor: pointer;
 	float: left;
 	width: 33.33%;
+<<<<<<< HEAD
 
 	flex-wrap: wrap;
 
+=======
+	flex-wrap: wrap;
+	
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 }
 
 
@@ -459,7 +468,10 @@ section#cases #container .case .case-ative {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+<<<<<<< HEAD
   transition: width 0.5s;
+=======
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 }
 
 
@@ -469,7 +481,11 @@ section#cases #container .case .case-hover {
 	padding-top: 170px;
 	text-align: center;
 	overflow: hidden;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 }
 
 section#cases #container .case .case-hover .categoria {
@@ -477,7 +493,11 @@ section#cases #container .case .case-hover .categoria {
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 6px;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 }
 
 section#cases #container .case .case-hover h2 {
@@ -508,9 +528,15 @@ section#cases #container .case .case-hover a {
 	text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 section#cases #container .case .case-hover a:hover
 {
 	color: #ffcc00;
+=======
+section#cases #container .case .case-hover a:hover 
+{
+	color: #ffcc00; 
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20
 
 }
 

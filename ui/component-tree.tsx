@@ -1,6 +1,12 @@
+<<<<<<< HEAD:ui/component-tree.tsx
 import { Boundary } from '#/ui/boundary';
 import CountUp from '#/ui/count-up';
 import clsx from 'clsx';
+=======
+import { Boundary } from '#/ui/Boundary';
+import CountUp from '#/ui/CountUp';
+import { clsx } from 'clsx';
+>>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20:ui/ComponentTree.tsx
 
 type Item = {
   name: string;
