@@ -1,4 +1,4 @@
-import HeroHome from "/ui/Components/HeroHome/parallax";
+import HeroHome from "../ui/Components/HeroHome/parallax";
 
 export default function Page() {
   return (
