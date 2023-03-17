@@ -1,7 +1,7 @@
 import { toFormat, type Dinero } from 'dinero.js';
 
 export const ProductCurrencySymbol = ({
-  dinero,
+  dinero
 }: {
   dinero: Dinero<number>;
 }) => {

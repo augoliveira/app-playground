@@ -9,7 +9,7 @@ const MobileNavContext = React.createContext<
 >(undefined);
 
 export function MobileNavContextProvider({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -25,7 +25,7 @@ export function useMobileNavToggle() {
   const context = React.useContext(MobileNavContext);
   if (context === undefined) {
     throw new Error(
-      'useMobileNavToggle must be used within a MobileNavContextProvider',
+      'useMobileNavToggle must be used within a MobileNavContextProvider'
     );
   }
   return context;
@@ -37,24 +37,24 @@ export function MobileNavToggle({ children }: { children: React.ReactNode }) {
   return (
     <>
       <button
-        type="button"
-        className="group absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 lg:hidden"
+        type='button'
+        className='group absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 lg:hidden'
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="font-medium text-gray-100 group-hover:text-gray-400">
+        <div className='font-medium text-gray-100 group-hover:text-gray-400'>
           Menu
         </div>
         {isOpen ? (
-          <XIcon className="block w-6 text-gray-300" />
+          <XIcon className='block w-6 text-gray-300' />
         ) : (
-          <MenuAlt2Icon className="block w-6 text-gray-300" />
+          <MenuAlt2Icon className='block w-6 text-gray-300' />
         )}
       </button>
 
       <div
         className={clsx('overflow-y-auto lg:static lg:block', {
           'fixed inset-x-0 bottom-0 top-14 bg-gray-900': isOpen,
-          hidden: !isOpen,
+          hidden: !isOpen
         })}
       >
         {children}

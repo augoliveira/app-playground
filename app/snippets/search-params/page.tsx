@@ -8,26 +8,26 @@ const options = [
   {
     name: 'Sort',
     value: 'sort',
-    items: ['asc', 'desc'],
+    items: ['asc', 'desc']
   },
   {
     name: 'Page',
     value: 'page',
-    items: ['1', '2', '3'],
+    items: ['1', '2', '3']
   },
   {
     name: 'Items Per Page',
     value: 'perPage',
-    items: ['10', '25', '100'],
-  },
+    items: ['10', '25', '100']
+  }
 ];
 
 export const dynamic = 'force-dynamic';
 
 export default async function Page({ searchParams }: { searchParams: any }) {
   return (
-    <div className="prose prose-sm prose-invert max-w-none">
-      <h1 className="text-lg font-bold">
+    <div className='prose prose-sm prose-invert max-w-none'>
+      <h1 className='text-lg font-bold'>
         Updating <code>searchParams</code>
       </h1>
       <p>
@@ -38,10 +38,10 @@ export default async function Page({ searchParams }: { searchParams: any }) {
         <code>page.js</code> will receive an updated <code>searchParams</code>{' '}
         prop.
       </p>
-      <div className="mt-12 space-y-12">
-        <div className="space-y-4">
-          <Boundary color="blue" labels={['From the Client']}>
-            <h3 className="mt-0">
+      <div className='mt-12 space-y-12'>
+        <div className='space-y-4'>
+          <Boundary color='blue' labels={['From the Client']}>
+            <h3 className='mt-0'>
               Using <code>useRouter&#40;&#41;</code>
             </h3>
 
@@ -50,24 +50,24 @@ export default async function Page({ searchParams }: { searchParams: any }) {
             </Suspense>
           </Boundary>
 
-          <ExternalLink href="https://beta.nextjs.org/docs/api-reference/use-search-params">
+          <ExternalLink href='https://beta.nextjs.org/docs/api-reference/use-search-params'>
             Docs
           </ExternalLink>
         </div>
 
-        <div className="space-y-4">
+        <div className='space-y-4'>
           <Boundary labels={['From the Server']}>
-            <h3 className="mt-0">
+            <h3 className='mt-0'>
               Using <code>&lt;Link&gt;</code>
             </h3>
 
-            <div className="flex items-center gap-6">
-              {options.map((option) => {
+            <div className='flex items-center gap-6'>
+              {options.map(option => {
                 return (
                   <div key={option.name}>
-                    <div className="text-gray-400">{option.name}</div>
+                    <div className='text-gray-400'>{option.name}</div>
 
-                    <div className="mt-1 flex gap-2">
+                    <div className='mt-1 flex gap-2'>
                       {option.items.map((item, i) => {
                         const isActive =
                           // set the first item as active if no search param is set
@@ -95,7 +95,7 @@ export default async function Page({ searchParams }: { searchParams: any }) {
             </div>
           </Boundary>
 
-          <ExternalLink href="https://beta.nextjs.org/docs/api-reference/file-conventions/page">
+          <ExternalLink href='https://beta.nextjs.org/docs/api-reference/file-conventions/page'>
             Docs
           </ExternalLink>
         </div>

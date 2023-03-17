@@ -4,7 +4,7 @@ import React from 'react';
 const Label = ({
   children,
   animateRerendering,
-  color,
+  color
 }: {
   children: React.ReactNode;
   animateRerendering?: boolean;
@@ -19,7 +19,7 @@ const Label = ({
         'bg-vercel-cyan text-white': color === 'cyan',
         'bg-vercel-violet text-violet-100': color === 'violet',
         'bg-vercel-orange text-white': color === 'orange',
-        'animate-[highlight_1s_ease-in-out_1]': animateRerendering,
+        'animate-[highlight_1s_ease-in-out_1]': animateRerendering
       })}
     >
       {children}
@@ -31,7 +31,7 @@ export const Boundary = ({
   labels = ['children'],
   size = 'default',
   color = 'default',
-  animateRerendering = true,
+  animateRerendering = true
 }: {
   children: React.ReactNode;
   labels?: string[];
@@ -51,7 +51,7 @@ export const Boundary = ({
         'border-vercel-violet': color === 'violet',
         'border-vercel-orange': color === 'orange',
         'animate-[rerender_1s_ease-in-out_1] text-vercel-pink':
-          animateRerendering,
+          animateRerendering
       })}
     >
       <div
@@ -59,11 +59,11 @@ export const Boundary = ({
           'absolute -top-2.5 flex gap-x-1 text-[9px] uppercase leading-4 tracking-widest',
           {
             'left-3 lg:left-5': size === 'small',
-            'left-4 lg:left-9': size === 'default',
-          },
+            'left-4 lg:left-9': size === 'default'
+          }
         )}
       >
-        {labels.map((label) => {
+        {labels.map(label => {
           return (
             <Label
               key={label}

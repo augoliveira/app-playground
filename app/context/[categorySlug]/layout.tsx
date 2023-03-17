@@ -6,7 +6,7 @@ import { Counter } from '../context-click-counter';
 
 export default async function Layout({
   children,
-  params,
+  params
 }: {
   children: React.ReactNode;
   params: { categorySlug: string };
@@ -16,17 +16,17 @@ export default async function Layout({
 
   return (
     <Boundary labels={['Layout [Server Component]']} animateRerendering={false}>
-      <div className="space-y-9">
+      <div className='space-y-9'>
         <TabGroup
           path={`/context/${category.slug}`}
           items={[
             {
-              text: 'All',
+              text: 'All'
             },
-            ...category.items.map((x) => ({
+            ...category.items.map(x => ({
               text: x.name,
-              slug: x.slug,
-            })),
+              slug: x.slug
+            }))
           ]}
         />
         <Counter />

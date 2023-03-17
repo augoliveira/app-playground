@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export const ProductCard = ({
   product,
-  href,
+  href
 }: {
   product: Product;
   href: string;
@@ -19,11 +19,11 @@ export const ProductCard = ({
   const price = dinero(product.price as DineroSnapshot<number>);
 
   return (
-    <Link href={href} className="group block">
-      <div className="space-y-2">
-        <div className="relative">
+    <Link href={href} className='group block'>
+      <div className='space-y-2'>
+        <div className='relative'>
           {product.isBestSeller ? (
-            <div className="absolute top-2 left-2 z-10 flex">
+            <div className='absolute top-2 left-2 z-10 flex'>
               <ProductBestSeller />
             </div>
           ) : null}
@@ -31,14 +31,14 @@ export const ProductCard = ({
             src={`/${product.image}`}
             width={400}
             height={400}
-            className="rounded-xl grayscale group-hover:opacity-80"
+            className='rounded-xl grayscale group-hover:opacity-80'
             alt={product.name}
-            placeholder="blur"
+            placeholder='blur'
             blurDataURL={product.imageBlur}
           />
         </div>
 
-        <div className="truncate text-sm font-medium text-white group-hover:text-vercel-cyan">
+        <div className='truncate text-sm font-medium text-white group-hover:text-vercel-cyan'>
           {product.name}
         </div>
 

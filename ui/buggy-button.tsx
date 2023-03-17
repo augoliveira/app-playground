@@ -12,7 +12,7 @@ export default function BuggyButton() {
 
   return (
     <Button
-      kind="error"
+      kind='error'
       onClick={() => {
         setClicked(true);
       }}

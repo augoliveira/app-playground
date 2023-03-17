@@ -5,7 +5,7 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useMemo } from 'react';
 
 export default function Client({
-  options,
+  options
 }: {
   options: {
     name: string;
@@ -23,7 +23,7 @@ export default function Client({
 
     // Preselect the first value of each option if its not
     // included in the current searchParams
-    options.forEach((option) => {
+    options.forEach(option => {
       if (!searchParams.has(option.value)) {
         params.set(option.value, option.items[0]);
       }
@@ -42,18 +42,18 @@ export default function Client({
       // receive a new `searchParams` prop with the updated values.
       router.push(pathname + '?' + params.toString()); // or router.replace()
     },
-    [router, pathname, searchParams],
+    [router, pathname, searchParams]
   );
 
   return (
     <>
-      <div className="flex items-center gap-6">
-        {options.map((option) => (
+      <div className='flex items-center gap-6'>
+        {options.map(option => (
           <div key={option.name}>
-            <div className="text-gray-400">{option.name}</div>
+            <div className='text-gray-400'>{option.name}</div>
 
-            <div className="mt-1 flex gap-2">
-              {option.items.map((item) => {
+            <div className='mt-1 flex gap-2'>
+              {option.items.map(item => {
                 const isActive = selectedOptions.get(option.value) === item;
 
                 return (
@@ -65,8 +65,8 @@ export default function Client({
                       {
                         'bg-gray-700 text-gray-100 hover:bg-gray-500 hover:text-white':
                           !isActive,
-                        'bg-vercel-blue text-white': isActive,
-                      },
+                        'bg-vercel-blue text-white': isActive
+                      }
                     )}
                   >
                     {item}

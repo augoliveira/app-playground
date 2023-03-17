@@ -6,11 +6,11 @@ import React from 'react';
 import ContextClickCounter from './context-click-counter';
 
 export const metadata = {
-  title: 'Client Context',
+  title: 'Client Context'
 };
 
 export default async function Layout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -18,33 +18,33 @@ export default async function Layout({
   return (
     <Boundary
       labels={['Server Component Boundary']}
-      size="small"
+      size='small'
       animateRerendering={false}
     >
       <Boundary
         labels={['Counter Context Provider [Client Component]']}
-        color="blue"
-        size="small"
+        color='blue'
+        size='small'
         animateRerendering={false}
       >
         <CounterProvider>
           <Boundary
             labels={['Server Component Boundary']}
-            size="small"
+            size='small'
             animateRerendering={false}
           >
-            <div className="space-y-9">
-              <div className="flex justify-between">
+            <div className='space-y-9'>
+              <div className='flex justify-between'>
                 <TabGroup
-                  path="/context"
+                  path='/context'
                   items={[
                     {
-                      text: 'Home',
+                      text: 'Home'
                     },
-                    ...categories.map((x) => ({
+                    ...categories.map(x => ({
                       text: x.name,
-                      slug: x.slug,
-                    })),
+                      slug: x.slug
+                    }))
                   ]}
                 />
               </div>

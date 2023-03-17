@@ -5,7 +5,7 @@ import { CartCountProvider } from '../_components/cart-count-context';
 import { Header } from '../_components/header';
 
 export const metadata = {
-  title: 'Streaming (Node Runtime)',
+  title: 'Streaming (Node Runtime)'
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div className="prose prose-sm prose-invert mb-8 max-w-none">
+      <div className='prose prose-sm prose-invert mb-8 max-w-none'>
         <ul>
           <li>
             Primary product information is loaded first as part of the initial
@@ -27,9 +27,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <li>Try refreshing or navigating to other recommended products.</li>
         </ul>
       </div>
-      <Boundary animateRerendering={false} labels={['Demo']} size="small">
+      <Boundary animateRerendering={false} labels={['Demo']} size='small'>
         <CartCountProvider initialCartCount={cartCount}>
-          <div className="space-y-10">
+          <div className='space-y-10'>
             <Header />
 
             {children}

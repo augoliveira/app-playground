@@ -4,7 +4,7 @@ import { type Dinero } from 'dinero.js';
 
 export const ProductLighteningDeal = ({
   price,
-  discount,
+  discount
 }: {
   price: Dinero<number>;
   discount: {
@@ -16,8 +16,8 @@ export const ProductLighteningDeal = ({
 
   return (
     <>
-      <div className="flex">
-        <div className="rounded bg-gray-600 px-1.5 text-xs font-medium leading-5 text-white">
+      <div className='flex'>
+        <div className='rounded bg-gray-600 px-1.5 text-xs font-medium leading-5 text-white'>
           Expires in {formatDistanceToNow(date)}
         </div>
       </div>

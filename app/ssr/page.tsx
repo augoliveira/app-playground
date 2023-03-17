@@ -2,8 +2,8 @@ import { ExternalLink } from '#/ui/external-link';
 
 export default function Page() {
   return (
-    <div className="prose prose-sm prose-invert max-w-none">
-      <h1 className="text-xl font-bold">Server-side rendering</h1>
+    <div className='prose prose-sm prose-invert max-w-none'>
+      <h1 className='text-xl font-bold'>Server-side rendering</h1>
 
       <ul>
         <li>
@@ -19,11 +19,11 @@ export default function Page() {
         </li>
       </ul>
 
-      <div className="flex gap-2">
-        <ExternalLink href="https://beta.nextjs.org/docs/data-fetching/fetching#dynamic-data">
+      <div className='flex gap-2'>
+        <ExternalLink href='https://beta.nextjs.org/docs/data-fetching/fetching#dynamic-data'>
           Docs
         </ExternalLink>
-        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/ssr">
+        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/ssr'>
           Code
         </ExternalLink>
       </div>

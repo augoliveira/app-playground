@@ -1,6 +1,8 @@
-import { Layout } from '#/ui/page-directory/layout';
-import { Inter, Karla } from 'next/font/google';
 import { AppProps } from 'next/app';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Inter, Karla } from 'next/font/google';
+
+import { Layout } from '#/ui/page-directory/layout';
 import 'styles/globals.css';
 
 // Using next/font instead of a manual setup, we get:
@@ -10,7 +12,7 @@ import 'styles/globals.css';
 // - no network requests from the browser
 const primaryFont = Inter({
   subsets: ['latin'],
-  variable: '--primary-font',
+  variable: '--primary-font'
 });
 
 export default function App({ Component, pageProps }: AppProps) {

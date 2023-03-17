@@ -12,7 +12,7 @@ export default function Button({
         'bg-gray-700 text-gray-100 hover:bg-gray-500 hover:text-white':
           kind === 'default',
         'bg-vercel-pink text-red-50 hover:bg-pink-600 hover:text-white':
-          kind === 'error',
+          kind === 'error'
       })}
       {...props}
     />

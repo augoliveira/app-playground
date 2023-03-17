@@ -11,15 +11,15 @@ import { AddToCart } from './add-to-cart';
 
 function LoadingDots() {
   return (
-    <div className="text-sm">
-      <span className="space-x-0.5">
-        <span className="inline-flex animate-[loading_1.4s_ease-in-out_infinite] rounded-full">
+    <div className='text-sm'>
+      <span className='space-x-0.5'>
+        <span className='inline-flex animate-[loading_1.4s_ease-in-out_infinite] rounded-full'>
           &bull;
         </span>
-        <span className="inline-flex animate-[loading_1.4s_ease-in-out_0.2s_infinite] rounded-full">
+        <span className='inline-flex animate-[loading_1.4s_ease-in-out_0.2s_infinite] rounded-full'>
           &bull;
         </span>
-        <span className="inline-flex animate-[loading_1.4s_ease-in-out_0.4s_infinite] rounded-full">
+        <span className='inline-flex animate-[loading_1.4s_ease-in-out_0.4s_infinite] rounded-full'>
           &bull;
         </span>
       </span>
@@ -33,8 +33,8 @@ async function UserSpecificDetails({ productId }: { productId: string }) {
     {
       // We intentionally disable Next.js Cache to better demo
       // streaming
-      cache: 'no-store',
-    },
+      cache: 'no-store'
+    }
   );
 
   const product = (await data.json()) as Product;
@@ -57,7 +57,7 @@ async function UserSpecificDetails({ productId }: { productId: string }) {
 
 export function Pricing({
   product,
-  cartCount,
+  cartCount
 }: {
   product: Product;
   cartCount: string;
@@ -65,11 +65,11 @@ export function Pricing({
   const price = dinero(product.price as DineroSnapshot<number>);
 
   return (
-    <div className="space-y-4 rounded-lg bg-gray-900 p-3">
+    <div className='space-y-4 rounded-lg bg-gray-900 p-3'>
       <ProductPrice price={price} discount={product.discount} />
 
-      <div className="relative">
-        <div className="absolute top-1 -left-4">
+      <div className='relative'>
+        <div className='absolute top-1 -left-4'>
           <Ping />
         </div>
       </div>

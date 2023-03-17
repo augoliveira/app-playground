@@ -4,7 +4,7 @@ import React from 'react';
 import {
   usePathname,
   useSelectedLayoutSegments,
-  useSearchParams,
+  useSearchParams
 } from 'next/navigation';
 
 const HooksClient = () => {
@@ -14,7 +14,7 @@ const HooksClient = () => {
   const searchParam = searchParams?.get('key');
 
   return (
-    <div className="overflow-x-auto rounded-xl py-4 px-2 text-sm text-white [color-scheme:dark]">
+    <div className='overflow-x-auto rounded-xl py-4 px-2 text-sm text-white [color-scheme:dark]'>
       <pre>
         {JSON.stringify(
           {
@@ -30,11 +30,11 @@ const HooksClient = () => {
               replace: '(string) => void',
               softReplace: '(string) => void',
               reload: '() => void',
-              prefetch: '() => Promise<void>',
-            },
+              prefetch: '() => Promise<void>'
+            }
           },
           null,
-          2,
+          2
         )}
       </pre>
     </div>

@@ -2,8 +2,8 @@ import { ExternalLink } from '#/ui/external-link';
 
 export default function Page() {
   return (
-    <div className="prose prose-sm prose-invert max-w-none">
-      <h1 className="text-xl font-bold">Instant Loading States</h1>
+    <div className='prose prose-sm prose-invert max-w-none'>
+      <h1 className='text-xl font-bold'>Instant Loading States</h1>
 
       <ul>
         <li>
@@ -22,11 +22,11 @@ export default function Page() {
         </li>
       </ul>
 
-      <div className="flex gap-2">
-        <ExternalLink href="https://beta.nextjs.org/docs/routing/loading-ui">
+      <div className='flex gap-2'>
+        <ExternalLink href='https://beta.nextjs.org/docs/routing/loading-ui'>
           Docs
         </ExternalLink>
-        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/loading">
+        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/loading'>
           Code
         </ExternalLink>
       </div>

@@ -10,22 +10,22 @@ function isDiscount(obj: any): obj is { percent: number; expires?: number } {
 
 function formatDiscount(
   price: Dinero<number>,
-  discountRaw: Product['discount'],
+  discountRaw: Product['discount']
 ) {
   return isDiscount(discountRaw)
     ? {
         amount: multiply(price, {
           amount: discountRaw.percent,
-          scale: 2,
+          scale: 2
         }),
-        expires: discountRaw.expires,
+        expires: discountRaw.expires
       }
     : undefined;
 }
 
 export const ProductPrice = ({
   price,
-  discount: discountRaw,
+  discount: discountRaw
 }: {
   price: Dinero<number>;
   discount: Product['discount'];
@@ -40,11 +40,11 @@ export const ProductPrice = ({
   }
 
   return (
-    <div className="flex">
-      <div className="text-sm leading-snug text-white">
+    <div className='flex'>
+      <div className='text-sm leading-snug text-white'>
         <ProductCurrencySymbol dinero={price} />
       </div>
-      <div className="text-lg font-bold leading-snug text-white">
+      <div className='text-lg font-bold leading-snug text-white'>
         {toUnit(price)}
       </div>
     </div>

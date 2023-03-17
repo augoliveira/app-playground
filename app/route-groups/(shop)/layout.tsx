@@ -5,31 +5,31 @@ import { TabGroup } from '#/ui/tab-group';
 import React from 'react';
 
 export default async function Layout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
   const categories = await fetchCategories();
   return (
-    <Boundary labels={['shop layout']} color="cyan" animateRerendering={false}>
-      <div className="space-y-9">
-        <div className="flex justify-between">
+    <Boundary labels={['shop layout']} color='cyan' animateRerendering={false}>
+      <div className='space-y-9'>
+        <div className='flex justify-between'>
           <TabGroup
-            path="/route-groups"
+            path='/route-groups'
             items={[
               {
-                text: 'Home',
+                text: 'Home'
               },
-              ...categories.map((x) => ({
+              ...categories.map(x => ({
                 text: x.name,
-                slug: x.slug,
+                slug: x.slug
               })),
               { text: 'Checkout', slug: 'checkout' },
-              { text: 'Blog', slug: 'blog' },
+              { text: 'Blog', slug: 'blog' }
             ]}
           />
 
-          <div className="self-start">
+          <div className='self-start'>
             <ClickCounter />
           </div>
         </div>

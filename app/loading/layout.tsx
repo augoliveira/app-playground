@@ -5,11 +5,11 @@ import { notFound } from 'next/navigation';
 import React from 'react';
 
 export const metadata = {
-  title: 'Loading',
+  title: 'Loading'
 };
 
 export default async function Layout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -17,22 +17,22 @@ export default async function Layout({
   if (!categories) notFound();
 
   return (
-    <div className="space-y-9">
-      <div className="flex justify-between">
+    <div className='space-y-9'>
+      <div className='flex justify-between'>
         <TabGroup
-          path="/loading"
+          path='/loading'
           items={[
             {
-              text: 'Home',
+              text: 'Home'
             },
-            ...categories.map((x) => ({
+            ...categories.map(x => ({
               text: x.name,
-              slug: x.slug,
-            })),
+              slug: x.slug
+            }))
           ]}
         />
 
-        <div className="self-start">
+        <div className='self-start'>
           <ClickCounter />
         </div>
       </div>

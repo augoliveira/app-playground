@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 
 export default async function Layout({
   children,
-  params,
+  params
 }: {
   children: React.ReactNode;
   params: { categorySlug: string };
@@ -21,27 +21,27 @@ export default async function Layout({
   // Learn more: https://beta.nextjs.org/docs/routing/fundamentals#component-hierarchy.
 
   return (
-    <div className="space-y-9">
+    <div className='space-y-9'>
       <div>
-        <div className="flex justify-between">
+        <div className='flex justify-between'>
           <TabGroup
             path={`/not-found/${category.slug}`}
             items={[
               {
-                text: 'All',
+                text: 'All'
               },
-              ...category.items.map((x) => ({
+              ...category.items.map(x => ({
                 text: x.name,
-                slug: x.slug,
+                slug: x.slug
               })),
               {
                 text: 'Subcategory That Does Not Exist',
-                slug: 'does-not-exist',
-              },
+                slug: 'does-not-exist'
+              }
             ]}
           />
 
-          <div className="self-start">
+          <div className='self-start'>
             <ClickCounter />
           </div>
         </div>
