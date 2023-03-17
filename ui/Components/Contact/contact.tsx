@@ -1,6 +1,7 @@
-'use client';
-import { ButtonSecondary, Container, Title } from '#/styles/styles';
-import Link from 'next/link';
+"use client";
+import Link from "next/link";
+
+import { ButtonSecondary, Container, Title } from "#/styles/styles";
 import {
   At,
   ChatCircleText,
@@ -9,13 +10,14 @@ import {
   MapPin,
   TelegramLogo,
   User,
-  WhatsappLogo
-} from 'phosphor-react';
-import { ContactContent, ContainerContact, Form } from './styles';
+  WhatsappLogo,
+} from "phosphor-react";
+
+import { ContactContent, ContainerContact, Form } from "./styles";
 
 export function Contact() {
   return (
-    <Container id='contact'>
+    <Container id="contact">
       <ContainerContact>
         <Title>
           Contato
@@ -25,111 +27,111 @@ export function Contact() {
         </Title>
 
         <ContactContent>
-          <div className='contact-content'>
+          <div className="contact-content">
             <h2>
-              <WhatsappLogo size={22} color='#00fffb' /> WhatsApp{' '}
+              <WhatsappLogo size={22} color="#00fffb" /> WhatsApp{" "}
             </h2>
-            <Link href='https://wzap.me/121844149042' target='_blank'>
+            <Link href="https://wzap.me/121844149042" target="_blank">
               <span>(61) 9 8669-2775)</span>
             </Link>
           </div>
 
-          <div className='contact-content'>
+          <div className="contact-content">
             <h2>
-              {' '}
-              <TelegramLogo size={22} color='#00fffb' /> Email{' '}
+              {" "}
+              <TelegramLogo size={22} color="#00fffb" /> Email{" "}
             </h2>
-            <Link href='mailto:contato@upexpert.com.br' target='_blank'>
+            <Link href="mailto:contato@upexpert.com.br" target="_blank">
               <span>contato@upexpert.com.br</span>
             </Link>
           </div>
 
-          <div className='contact-content'>
+          <div className="contact-content">
             <h2>
-              <MapPin size={22} color='#00fffb' /> Localização
+              <MapPin size={22} color="#00fffb" /> Localização
             </h2>
             <span>QUADRA 6, SALA 501 - Asa Sul, Brasília - DF</span>
           </div>
         </ContactContent>
         <Form
-          action='https://formsubmit.co/contato@upexpert.com.br'
-          method='POST'
+          action="https://formsubmit.co/contato@upexpert.com.br"
+          method="POST"
         >
-          <input type='hidden' name='_template' value='box' />
+          <input type="hidden" name="_template" value="box" />
 
-          <div className='input-group'>
+          <div className="input-group">
             <input
-              type='text'
-              name='name'
-              id='name'
-              autoComplete='name'
-              placeholder=' '
+              type="text"
+              name="name"
+              id="name"
+              autoComplete="name"
+              placeholder=" "
               required
-              className='input'
+              className="input"
             />
-            <label htmlFor='name' className='user-label'>
-              Nome{' '}
+            <label htmlFor="name" className="user-label">
+              Nome{" "}
               <span>
-                <User size={15} weight='bold' />
+                <User size={15} weight="bold" />
               </span>
             </label>
           </div>
 
-          <div className='input-group'>
+          <div className="input-group">
             <input
-              type='email'
-              name='email'
-              autoComplete='email'
-              id='email'
-              placeholder=' '
+              type="email"
+              name="email"
+              autoComplete="email"
+              id="email"
+              placeholder=" "
               required
-              className='input'
+              className="input"
             />
-            <label htmlFor='email' className='user-label'>
-              Email{' '}
+            <label htmlFor="email" className="user-label">
+              Email{" "}
               <span>
-                <At size={15} weight='bold' />
+                <At size={15} weight="bold" />
               </span>
             </label>
           </div>
 
-          <div className='input-group'>
+          <div className="input-group">
             <input
-              type='text'
-              name='subject'
-              id='subject'
-              autoComplete='subject'
-              placeholder=' '
+              type="text"
+              name="subject"
+              id="subject"
+              autoComplete="subject"
+              placeholder=" "
               required
-              className='input'
+              className="input"
             />
-            <label htmlFor='subject' className='user-label'>
-              Assunto{' '}
+            <label htmlFor="subject" className="user-label">
+              Assunto{" "}
               <span>
-                <ChatText size={15} weight='bold' />
+                <ChatText size={15} weight="bold" />
               </span>
             </label>
           </div>
 
-          <div className='input-group'>
+          <div className="input-group">
             <textarea
-              name='description'
-              id='description'
-              autoComplete='description'
+              name="description"
+              id="description"
+              autoComplete="description"
               required
-              placeholder=' '
-              className='input'
+              placeholder=" "
+              className="input"
             ></textarea>
-            <label htmlFor='description' className='user-label'>
-              Mensagem{' '}
+            <label htmlFor="description" className="user-label">
+              Mensagem{" "}
               <span>
-                <ChatCircleText size={15} weight='bold' />
+                <ChatCircleText size={15} weight="bold" />
               </span>
             </label>
           </div>
 
-          <ButtonSecondary type='submit'>
-            Enviar <TelegramLogo size={15} weight='bold' />{' '}
+          <ButtonSecondary type="submit">
+            Enviar <TelegramLogo size={15} weight="bold" />{" "}
           </ButtonSecondary>
         </Form>
       </ContainerContact>
