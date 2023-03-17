@@ -11,7 +11,7 @@ export default function App() {
     <ParallaxProvider>
       <AdvancedBannerTop />
       <div className="">
-        <MainHome className="headline gray" />
+        <MainHome />
       </div>
     </ParallaxProvider>
   );
