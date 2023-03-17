@@ -1,10 +1,10 @@
 const addParlx = () => {
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     var scrolled = window.pageYOffset;
-    if (document.querySelector('.fixed-slider .capt .parlx')) {
-      document.querySelector('.fixed-slider .capt .parlx').style.transform =
-        'translate3d(0, ' + scrolled * 0.15 + 'px, 0)';
-      document.querySelector('.fixed-slider .capt .parlx').style.opacity =
+    if (document.querySelector(".fixed-slider .capt .parlx")) {
+      document.querySelector(".fixed-slider .capt .parlx").style.transform =
+        "translate3d(0, " + scrolled * 0.15 + "px, 0)";
+      document.querySelector(".fixed-slider .capt .parlx").style.opacity =
         1 - scrolled / 600;
     }
   });

@@ -1,18 +1,19 @@
-'use client';
+"use client";
 
-import Button from '#/ui/button';
-import React from 'react';
+import React from "react";
+
+import Button from "#/ui/button";
 
 export default function BuggyButton() {
   const [clicked, setClicked] = React.useState(false);
 
   if (clicked) {
-    throw new Error('Oh no! Something went wrong.');
+    throw new Error("Oh no! Something went wrong.");
   }
 
   return (
     <Button
-      kind='error'
+      kind="error"
       onClick={() => {
         setClicked(true);
       }}

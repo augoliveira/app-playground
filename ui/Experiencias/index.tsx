@@ -1,6 +1,6 @@
-'use client';
-import ExperienciaItem from './ExperienciaItem';
-import { Container } from './styles';
+"use client";
+import ExperienciaItem from "./ExperienciaItem";
+import { Container } from "./styles";
 
 function Experiencias() {
   return (

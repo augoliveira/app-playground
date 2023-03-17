@@ -1,13 +1,15 @@
-import { getSiblings } from './customFunctions';
+import { getSiblings } from "./customFunctions";
 
 const featuresEffect = () => {
-  var featuresitems = document.querySelectorAll('.feat .items');
+  var featuresitems = document.querySelectorAll(".feat .items");
   if (featuresitems) {
-    featuresitems.forEach(item => {
+    featuresitems.forEach((item) => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       item.onmouseover = function (event) {
-        item.classList.add('active');
+        item.classList.add("active");
         let siblings = getSiblings(item),
-          siblingEl = siblings.map(e => e.classList.remove('active'));
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          siblingEl = siblings.map((e) => e.classList.remove("active"));
       };
     });
   }

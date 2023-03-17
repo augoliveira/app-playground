@@ -1,9 +1,9 @@
-import { ExternalLink } from '#/ui/external-link';
+import { ExternalLink } from "#/ui/external-link";
 
 export default function Page() {
   return (
-    <div className='prose prose-sm prose-invert max-w-none'>
-      <h1 className='text-xl font-bold'>Instant Loading States</h1>
+    <div className="prose prose-sm prose-invert max-w-none">
+      <h1 className="text-xl font-bold">Instant Loading States</h1>
 
       <ul>
         <li>
@@ -12,21 +12,24 @@ export default function Page() {
           loading skeleton immediately while data for category page loads before
           being streamed in.
         </li>
+
         <li>
           Shared layouts remain interactive while nested layouts or pages load.
           Try clicking the counter while the children load.
         </li>
+
         <li>
           Navigation is interruptible. Try navigating to one category, then
           clicking a second category before the first one has loaded.
         </li>
       </ul>
 
-      <div className='flex gap-2'>
-        <ExternalLink href='https://beta.nextjs.org/docs/routing/loading-ui'>
+      <div className="flex gap-2">
+        <ExternalLink href="https://beta.nextjs.org/docs/routing/loading-ui">
           Docs
         </ExternalLink>
-        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/loading'>
+
+        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/loading">
           Code
         </ExternalLink>
       </div>

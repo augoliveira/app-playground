@@ -1,11 +1,12 @@
-import { fetchCategoryBySlug } from '#/lib/get-categories';
-import { ClickCounter } from '#/ui/click-counter';
-import { TabGroup } from '#/ui/tab-group';
-import { notFound } from 'next/navigation';
+import { notFound } from "next/navigation";
+
+import { fetchCategoryBySlug } from "#/lib/get-categories";
+import { ClickCounter } from "#/ui/click-counter";
+import { TabGroup } from "#/ui/tab-group";
 
 export default async function Layout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: { categorySlug: string };
@@ -14,22 +15,22 @@ export default async function Layout({
   if (!category) notFound();
 
   return (
-    <div className='space-y-9'>
-      <div className='flex justify-between'>
+    <div className="space-y-9">
+      <div className="flex justify-between">
         <TabGroup
           path={`/websites/${category.slug}`}
           items={[
             {
-              text: 'All'
+              text: "All",
             },
-            ...category.items.map(x => ({
+            ...category.items.map((x) => ({
               text: x.name,
-              slug: x.slug
-            }))
+              slug: x.slug,
+            })),
           ]}
         />
 
-        <div className='self-start'>
+        <div className="self-start">
           <ClickCounter />
         </div>
       </div>

@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
-import mousecursor from '#/app/common/mouseEffect';
+import mousecursor from "#/app/common/mouseEffect";
 
 const Cursor = () => {
   React.useEffect(() => {
@@ -9,8 +9,8 @@ const Cursor = () => {
   }, []);
   return (
     <>
-      <div className='mouse-cursor cursor-outer'></div>
-      <div className='mouse-cursor cursor-inner'></div>
+      <div className="mouse-cursor cursor-outer"></div>
+      <div className="mouse-cursor cursor-inner"></div>
     </>
   );
 };

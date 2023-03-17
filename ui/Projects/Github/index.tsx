@@ -1,9 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-'use client';
-import Link from 'next/link';
-import { FiGithub } from 'react-icons/fi';
-import { ButtonSecondary } from '../../../styles/styles';
-import { AllContainer, AllContent, Cubo } from './styles';
+"use client";
+import Link from "next/link";
+import { FiGithub } from "react-icons/fi";
+
+import { AllContainer, AllContent, Cubo } from "./styles";
 
 export function AllProjects() {
   return (
@@ -12,7 +11,7 @@ export function AllProjects() {
         <h4>Todos os projetos</h4>
         <AllContent>
           <Link
-            href={'https://github.com/EvanderInacio?tab=repositories'}
+            href={"https://github.com/EvanderInacio?tab=repositories"}
             target="_blank"
           >
             <button>

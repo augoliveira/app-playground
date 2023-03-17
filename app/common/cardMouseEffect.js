@@ -1,13 +1,15 @@
-import getSiblings from './getSiblings';
+import getSiblings from "./getSiblings";
 
-const cardMouseEffect = featureEl => {
+const cardMouseEffect = (featureEl) => {
   var featuresitems = featureEl;
   if (featuresitems) {
-    featuresitems.forEach(item => {
+    featuresitems.forEach((item) => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       item.onmouseover = function (event) {
-        item.classList.add('active');
+        item.classList.add("active");
         const siblings = getSiblings(item);
-        const siblingEl = siblings.map(e => e.classList.remove('active'));
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const siblingEl = siblings.map((e) => e.classList.remove("active"));
       };
     });
   }

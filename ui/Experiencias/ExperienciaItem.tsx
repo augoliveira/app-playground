@@ -1,6 +1,7 @@
-'use client';
-import { LineSegments } from 'phosphor-react';
-import { ItemContainer } from './styles';
+"use client";
+import { LineSegments } from "phosphor-react";
+
+import { ItemContainer } from "./styles";
 
 interface ExperienciaProps {
   year: string;

@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components'
+"use client";
+import styled from "styled-components";
 
 export const Icons = styled.div`
   z-index: 10;
@@ -34,4 +34,4 @@ export const Icons = styled.div`
     background: var(--first-color);
     border-radius: px;
   }
-`
+`;

@@ -1,5 +1,5 @@
-'use client';
-import styled from 'styled-components';
+"use client";
+import styled from "styled-components";
 
 export const Container = styled.section`
   width: 80%;
@@ -66,7 +66,7 @@ export const TextContainer = styled.section`
 
   h2 {
     color: #ff8600;
-    font-family: 'Open sans Unicode';
+    font-family: "Open sans Unicode";
     font-size: 2.9rem;
     font-weight: 400;
     padding-right: 150px;
@@ -154,7 +154,7 @@ export const InfosContainer = styled.section`
 export const Design = styled.pre`
   background: url(/img/detalhe.png) #18181c center bottom no-repeat;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 300;
   color: #fff;
   padding: 6rem;
@@ -169,7 +169,7 @@ export const Design = styled.pre`
     font-size: 25px;
     font-weight: 900;
     margin-top: 32px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
   }
 
   h2 span {
@@ -260,7 +260,7 @@ export const Design = styled.pre`
     gap: 2.5rem;
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     line-height: 24px;
     padding: 22px 20px 0 60px;
   }
@@ -295,7 +295,7 @@ export const Design = styled.pre`
 export const Identidade = styled.pre`
   background: url(/img/detalhe.png) #18181c center bottom no-repeat;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 300;
   color: #fff;
   padding: 5rem;
@@ -310,7 +310,7 @@ export const Identidade = styled.pre`
     font-size: 25px;
     font-weight: 900;
     margin-top: 32px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
   }
 
   h2 span {
@@ -395,7 +395,7 @@ export const Identidade = styled.pre`
     gap: 2.5rem;
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     line-height: 24px;
     padding: 22px 20px 0 60px;
   }

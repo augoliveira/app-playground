@@ -1,39 +1,45 @@
-import { fetchCategories } from '#/lib/get-categories';
-import { ClickCounter } from '#/ui/click-counter';
-import { TabGroup } from '#/ui/tab-group';
-import React from 'react';
+import React from "react";
+
+import { fetchCategories } from "#/lib/get-categories";
+import { ClickCounter } from "#/ui/click-counter";
+import { TabGroup } from "#/ui/tab-group";
 
 export const metadata = {
-  title: 'Not Found'
+  title: "Not Found",
 };
 
 export default async function Layout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
   const categories = await fetchCategories();
+
   return (
-    <div className='space-y-9'>
-      <div className='flex justify-between'>
+    <div className="space-y-9">
+      <div className="flex justify-between">
         <TabGroup
-          path='/not-found'
+          path="/not-found"
           items={[
             {
-              text: 'Home'
+              text: "Home",
             },
-            ...categories.map(x => ({
+
+            ...categories.map((x) => ({
               text: x.name,
-              slug: x.slug
+
+              slug: x.slug,
             })),
+
             {
-              text: 'Category That Does Not Exist',
-              slug: 'does-not-exist'
-            }
+              text: "Category That Does Not Exist",
+
+              slug: "does-not-exist",
+            },
           ]}
         />
 
-        <div className='self-start'>
+        <div className="self-start">
           <ClickCounter />
         </div>
       </div>

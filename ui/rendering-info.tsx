@@ -1,32 +1,40 @@
-import { RenderedTimeAgo } from '#/ui/rendered-time-ago';
+import { RenderedTimeAgo } from "#/ui/rendered-time-ago";
 
 export function RenderingInfo({
-  type
+  type,
 }: {
-  type: 'ssg' | 'ssgod' | 'ssr' | 'isr';
+  type: "ssg" | "ssgod" | "ssr" | "isr";
 }) {
-  let msg = '';
+  let msg = "";
+
   switch (type) {
-    case 'ssg':
-      msg = 'Statically pre-rendered at build time';
+    case "ssg":
+      msg = "Statically pre-rendered at build time";
+
       break;
-    case 'ssgod':
-      msg = 'Statically rendered on demand';
+
+    case "ssgod":
+      msg = "Statically rendered on demand";
+
       break;
-    case 'isr':
+
+    case "isr":
       msg =
-        'Statically pre-rendered at build time and periodically revalidated';
+        "Statically pre-rendered at build time and periodically revalidated";
+
       break;
-    case 'ssr':
-      msg = 'Dynamically rendered at request time';
+
+    case "ssr":
+      msg = "Dynamically rendered at request time";
+
       break;
   }
 
   return (
-    <div className='space-y-3 rounded-lg bg-gray-900 p-3'>
-      <div className='text-sm text-gray-300'>{msg}</div>
+    <div className="space-y-3 rounded-lg bg-gray-900 p-3">
+      <div className="text-sm text-gray-300">{msg}</div>
 
-      <div className='flex'>
+      <div className="flex">
         <RenderedTimeAgo timestamp={Date.now()} />
       </div>
     </div>

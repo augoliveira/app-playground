@@ -1,9 +1,7 @@
-import Script from "next/script"
-
 // Default <head> tags we want shared across the app
-const APP_NAME = 'Agência full service'
+const APP_NAME = "Agência full service";
 const APP_DESCRIPTION =
-  'up.expert | Agência especializada em Marketing Digital.'
+  "up.expert | Agência especializada em Marketing Digital.";
 export function DefaultTags() {
   return (
     <>
@@ -75,5 +73,5 @@ export function DefaultTags() {
       />
       <link href="/favicon/favicon.ico" rel="shortcut icon" />
     </>
-  )
+  );
 }
