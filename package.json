@@ -31,6 +31,7 @@
     "dinero.js": "2.0.0-alpha.8",
     "ms": "3.0.0-canary.1",
     "next": "13.2.4",
+    "next-sitemap": "4.0.5",
     "react": "18.2.0",
     "react-awesome-reveal": "4.2.3",
     "react-dom": "18.2.0",
