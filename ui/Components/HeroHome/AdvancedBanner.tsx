@@ -5,7 +5,6 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import { BannerLayer } from "react-scroll-parallax/dist/components/ParallaxBanner/types";
 
 import Bg from "#/public/bgweb.jpg";
-import Web from "#/public/web.png";
 
 import Home from "../Home";
 
