@@ -3,7 +3,6 @@ import { ClickCounter } from '#/ui/click-counter';
 import { TabGroup } from '#/ui/tab-group';
 import { notFound } from 'next/navigation';
 
-<<<<<<< HEAD:app/layouts/[categorySlug]/layout.tsx
 export default async function Layout({
   children,
   params
@@ -11,9 +10,6 @@ export default async function Layout({
   children: React.ReactNode;
   params: { categorySlug: string };
 }) {
-=======
-export default async function Websites({ children, params }: PageProps) {
->>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20:app/websites/[categorySlug]/layout.tsx
   const category = await fetchCategoryBySlug(params.categorySlug);
   if (!category) notFound();
 

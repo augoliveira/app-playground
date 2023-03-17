@@ -19,6 +19,7 @@
     "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@emotion/react": "11.10.6",
     "@heroicons/react": "1.0.6",
     "@next/font": "13.2.4",
     "@tailwindcss/forms": "0.5.3",
