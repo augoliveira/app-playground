@@ -41,7 +41,6 @@ function Home() {
                 autoStart: true,
                 loop: true,
               }}
-              loop={true}
               onInit={(typewriter) => {
                 typewriter;
               }}
