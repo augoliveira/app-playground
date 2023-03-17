@@ -1,16 +1,10 @@
-<<<<<<< HEAD:ui/component-tree.tsx
-import { Boundary } from '#/ui/boundary';
-import CountUp from '#/ui/count-up';
-import clsx from 'clsx';
-=======
-import { Boundary } from '#/ui/Boundary';
-import CountUp from '#/ui/CountUp';
-import { clsx } from 'clsx';
->>>>>>> 43e66e21525f83e5a8ac168def6981d56fc8ab20:ui/ComponentTree.tsx
+import { Boundary } from "#/ui/boundary";
+import CountUp from "#/ui/count-up";
+import clsx from "clsx";
 
 type Item = {
   name: string;
-  type: 'server' | 'client';
+  type: "server" | "client";
   size: number;
   children?: Item[];
 };
@@ -28,52 +22,52 @@ const List = ({ items, depth }: { items: Item[]; depth: number }) => {
               depth === 0
                 ? undefined // Ignore first level
                 : clsx(
-                    'relative ml-5 pt-2',
+                    "relative ml-5 pt-2",
                     // Use the border of pseudo elements to visualize hierarchy
                     // │
-                    'before:absolute before:-left-2.5 before:top-0 before:border-l-2 before:border-gray-800',
+                    "before:absolute before:-left-2.5 before:top-0 before:border-l-2 before:border-gray-800",
                     // ──
-                    'after:absolute after:top-[17px] after:-left-2.5 after:h-3 after:w-2.5 after:border-t-2 after:border-gray-800',
+                    "after:absolute after:top-[17px] after:-left-2.5 after:h-3 after:w-2.5 after:border-t-2 after:border-gray-800",
                     {
                       // ├─
-                      'before:h-full': !isLast,
+                      "before:h-full": !isLast,
                       // └─
-                      'before:h-[17px]': isLast
+                      "before:h-[17px]": isLast,
                     }
                   )
             }
           >
-            <div className='flex gap-x-1'>
+            <div className="flex gap-x-1">
               <div
                 className={clsx(
-                  'rounded-md px-2 py-0.5 text-xs tracking-wide',
+                  "rounded-md px-2 py-0.5 text-xs tracking-wide",
                   {
-                    'bg-vercel-blue text-blue-100': item.type === 'client',
-                    'bg-gray-700 text-gray-200': item.type === 'server'
+                    "bg-vercel-blue text-blue-100": item.type === "client",
+                    "bg-gray-700 text-gray-200": item.type === "server",
                   }
                 )}
               >
-                <span className='text-white/40'>{'<'}</span>
+                <span className="text-white/40">{"<"}</span>
                 {item.name}
-                <span className='text-white/40'>{'>'}</span>
+                <span className="text-white/40">{">"}</span>
               </div>
 
               <div
                 className={clsx(
-                  'rounded-md bg-gray-800 px-2 py-0.5 text-xs tracking-wide text-white/50',
+                  "rounded-md bg-gray-800 px-2 py-0.5 text-xs tracking-wide text-white/50",
                   {
-                    'animate-[fadeToTransparent_1s_ease-in-out_forwards_1]':
-                      item.type === 'server'
+                    "animate-[fadeToTransparent_1s_ease-in-out_forwards_1]":
+                      item.type === "server",
                   }
                 )}
               >
-                <span className='tabular-nums'>
-                  {item.type === 'client' ? (
+                <span className="tabular-nums">
+                  {item.type === "client" ? (
                     item.size / 1000
                   ) : (
                     <CountUp start={item.size / 1000} end={0} />
                   )}
-                </span>{' '}
+                </span>{" "}
                 KB
               </div>
             </div>
@@ -90,7 +84,7 @@ const List = ({ items, depth }: { items: Item[]; depth: number }) => {
 
 // Calculate the total bundle size of a specific component type (client or
 // server) in a tree
-const sum = (items: Item[], componentType: Item['type']): number =>
+const sum = (items: Item[], componentType: Item["type"]): number =>
   items.reduce(
     (total, item) =>
       // running total
@@ -103,63 +97,63 @@ const sum = (items: Item[], componentType: Item['type']): number =>
   );
 
 export const ComponentTree = ({ items }: { items: Item[] }) => {
-  const clientTotal = sum(items, 'client');
-  const serverTotal = sum(items, 'server');
+  const clientTotal = sum(items, "client");
+  const serverTotal = sum(items, "server");
   const clientDeltaAsPercent = Math.round(
     (clientTotal / (clientTotal + serverTotal)) * 100
   );
 
   return (
-    <Boundary animateRerendering={false} labels={['Component Tree']}>
-      <div className='space-y-6'>
-        <div className='flex'>
-          <div className='flex-1'>
+    <Boundary animateRerendering={false} labels={["Component Tree"]}>
+      <div className="space-y-6">
+        <div className="flex">
+          <div className="flex-1">
             <List items={items} depth={0} />
           </div>
 
-          <div className='space-y-6'>
-            <div className='space-y-3 rounded-lg bg-gray-900 p-4'>
-              <div className='flex items-center justify-between gap-x-3'>
-                <div className='rounded-md bg-vercel-blue px-2 py-0.5 text-xs tabular-nums tracking-wider text-blue-50'>
+          <div className="space-y-6">
+            <div className="space-y-3 rounded-lg bg-gray-900 p-4">
+              <div className="flex items-center justify-between gap-x-3">
+                <div className="rounded-md bg-vercel-blue px-2 py-0.5 text-xs tabular-nums tracking-wider text-blue-50">
                   <CountUp
                     start={(clientTotal + serverTotal) / 1000}
                     end={clientTotal / 1000}
-                  />{' '}
+                  />{" "}
                   KB
                 </div>
-                <div className='text-sm text-gray-300'>Bundle Size</div>
+                <div className="text-sm text-gray-300">Bundle Size</div>
               </div>
 
-              <div className='overflow-hidden rounded-full bg-gray-700'>
+              <div className="overflow-hidden rounded-full bg-gray-700">
                 <div
                   className={clsx(
-                    'h-2 animate-[translateXReset_1s_ease-in-out_1_reverse] rounded-full bg-vercel-blue'
+                    "h-2 animate-[translateXReset_1s_ease-in-out_1_reverse] rounded-full bg-vercel-blue"
                   )}
                   style={{
-                    transform: `translateX(-${100 - clientDeltaAsPercent}%)`
+                    transform: `translateX(-${100 - clientDeltaAsPercent}%)`,
                   }}
                 />
               </div>
             </div>
 
-            <div className='space-y-3'>
-              <div className='flex items-center gap-x-3 text-sm text-gray-400'>
-                <div className='rounded-md bg-vercel-blue px-2 py-0.5 text-xs tracking-widest text-white/50'>
-                  {'</>'}
+            <div className="space-y-3">
+              <div className="flex items-center gap-x-3 text-sm text-gray-400">
+                <div className="rounded-md bg-vercel-blue px-2 py-0.5 text-xs tracking-widest text-white/50">
+                  {"</>"}
                 </div>
                 <div>Client Component</div>
               </div>
 
-              <div className='flex items-center gap-x-3 text-sm text-gray-400'>
-                <div className='rounded-md bg-gray-700 px-2 py-0.5 text-xs tracking-widest text-white/50'>
-                  {'</>'}
+              <div className="flex items-center gap-x-3 text-sm text-gray-400">
+                <div className="rounded-md bg-gray-700 px-2 py-0.5 text-xs tracking-widest text-white/50">
+                  {"</>"}
                 </div>
                 <div>Server Component</div>
               </div>
             </div>
           </div>
         </div>
-        <div className='text-sm italic text-vercel-orange'>
+        <div className="text-sm italic text-vercel-orange">
           Note: The component bundle sizes are not yet accurate.
         </div>
       </div>
