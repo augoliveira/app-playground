@@ -1,5 +1,5 @@
 import type { NextRequest } from 'next/server';
-import { ImageResponse } from 'next/og';
+import { ImageResponse } from '@vercel/og'
 import type { ReactElement } from 'react';
 
 export const runtime = 'edge';
