@@ -20,7 +20,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#dynamic-data-fetching">
           Docs
         </ExternalLink>
-        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/ssr">
+        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/ssr'>
           Code
         </ExternalLink>
       </div>

@@ -1,4 +1,4 @@
-import { ExternalLink } from '#/ui/external-link';
+import { ExternalLink } from "#/ui/external-link";
 
 export default function Page() {
   return (
@@ -10,14 +10,19 @@ export default function Page() {
           This example uses Route Groups to create layouts for different
           sections of the app without affecting the URL structure.
         </li>
+
         <li>
           Try navigating pages and noting the different layouts used for each
           section.
         </li>
+
         <li>Route groups can be used to:</li>
+
         <ul>
           <li>Opt a route segment out of a shared layout.</li>
+
           <li>Organize routes without affecting the URL structure.</li>
+
           <li>
             Create multiple root layouts by partitioning the top level of the
             application.
@@ -29,6 +34,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/routing/route-groups">
           Docs
         </ExternalLink>
+
         <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/route-groups">
           Code
         </ExternalLink>

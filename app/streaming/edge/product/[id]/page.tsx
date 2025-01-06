@@ -1,6 +1,6 @@
 import {
   RecommendedProducts,
-  RecommendedProductsSkeleton,
+  RecommendedProductsSkeleton
 } from '#/app/streaming/_components/recommended-products';
 import { Reviews, ReviewsSkeleton } from '#/app/streaming/_components/reviews';
 import { SingleProduct } from '#/app/streaming/_components/single-product';
@@ -27,7 +27,7 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
 
       <Suspense fallback={<RecommendedProductsSkeleton />}>
         <RecommendedProducts
-          path="/streaming/edge/product"
+          path='/streaming/edge/product'
           data={fetch(
             // We intentionally delay the response to simulate a slow data
             // request that would benefit from streaming
@@ -35,8 +35,8 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
             {
               // We intentionally disable Next.js Cache to better demo
               // streaming
-              cache: 'no-store',
-            },
+              cache: 'no-store'
+            }
           )}
         />
       </Suspense>
@@ -56,8 +56,8 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
             {
               // We intentionally disable Next.js Cache to better demo
               // streaming
-              cache: 'no-store',
-            },
+              cache: 'no-store'
+            }
           )}
         />
       </Suspense>

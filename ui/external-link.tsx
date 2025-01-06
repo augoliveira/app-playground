@@ -2,9 +2,11 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export const ExternalLink = ({
   children,
+
   href,
 }: {
   children: React.ReactNode;
+
   href: string;
 }) => {
   return (

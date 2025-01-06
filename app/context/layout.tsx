@@ -1,18 +1,12 @@
-import { getCategories } from '#/app/api/categories/getCategories';
+import { fetchCategories } from '#/lib/get-categories';
 import { Boundary } from '#/ui/boundary';
 import { TabGroup } from '#/ui/tab-group';
 import { CounterProvider } from 'app/context/counter-context';
 import React from 'react';
 import ContextClickCounter from './context-click-counter';
 
-const title = 'Client Context';
-
 export const metadata = {
-  title,
-  openGraph: {
-    title,
-    images: [`/api/og?title=${title}`],
-  },
+  title: 'Client Context',
 };
 
 export default async function Layout({
@@ -20,22 +14,22 @@ export default async function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  const categories = await getCategories();
+  const categories = await fetchCategories();
   return (
     <Boundary
-      labels={['Server Component Boundary']}
+      labels={["Server Component Boundary"]}
       size="small"
       animateRerendering={false}
     >
       <Boundary
-        labels={['Counter Context Provider [Client Component]']}
+        labels={["Counter Context Provider [Client Component]"]}
         color="blue"
         size="small"
         animateRerendering={false}
       >
         <CounterProvider>
           <Boundary
-            labels={['Server Component Boundary']}
+            labels={["Server Component Boundary"]}
             size="small"
             animateRerendering={false}
           >
@@ -45,10 +39,12 @@ export default async function Layout({
                   path="/context"
                   items={[
                     {
-                      text: 'Home',
+                      text: "Home",
                     },
+
                     ...categories.map((x) => ({
                       text: x.name,
+
                       slug: x.slug,
                     })),
                   ]}
@@ -56,6 +52,7 @@ export default async function Layout({
               </div>
 
               <ContextClickCounter />
+
               <div>{children}</div>
             </div>
           </Boundary>

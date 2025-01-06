@@ -22,12 +22,12 @@ export function Header() {
             <MagnifyingGlassIcon className="h-5 w-5 text-gray-300" />
           </div>
           <input
-            aria-label="Search"
-            type="search"
-            name="search"
-            id="search"
-            className="block w-full rounded-full border-none bg-gray-600 pl-10 font-medium text-gray-200 focus:border-vercel-pink focus:ring-2 focus:ring-vercel-pink"
-            autoComplete="off"
+            aria-label='Search'
+            type='search'
+            name='search'
+            id='search'
+            className='block w-full rounded-full border-none bg-gray-600 pl-10 font-medium text-gray-200 focus:border-vercel-pink focus:ring-2 focus:ring-vercel-pink'
+            autoComplete='off'
           />
         </div>
       </div>
@@ -41,11 +41,11 @@ export function Header() {
         </div>
 
         <Image
-          src="/prince-akachi-LWkFHEGpleE-unsplash.jpg"
-          className="rounded-full"
+          src='/prince-akachi-LWkFHEGpleE-unsplash.jpg'
+          className='rounded-full'
           width={40}
           height={40}
-          alt="User"
+          alt='User'
         />
       </div>
     </div>

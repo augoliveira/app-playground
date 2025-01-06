@@ -5,7 +5,7 @@ import { useServerInsertedHTML } from 'next/navigation';
 import { StyleRegistry, createStyleRegistry } from 'styled-jsx';
 
 export default function StyledJsxRegistry({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {

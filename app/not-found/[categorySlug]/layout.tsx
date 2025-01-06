@@ -26,15 +26,18 @@ export default async function Layout(props: {
             path={`/not-found/${category.slug}`}
             items={[
               {
-                text: 'All',
+                text: "All",
               },
               ...categories.map((x) => ({
                 text: x.name,
+
                 slug: x.slug,
               })),
+
               {
-                text: 'Subcategory That Does Not Exist',
-                slug: 'does-not-exist',
+                text: "Subcategory That Does Not Exist",
+
+                slug: "does-not-exist",
               },
             ]}
           />

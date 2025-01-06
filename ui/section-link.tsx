@@ -1,7 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export const SectionLink = ({
   children,
+
   href,
   text,
 }: {

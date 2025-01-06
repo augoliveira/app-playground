@@ -14,29 +14,29 @@ export const metadata = {
 };
 
 export default async function Layout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
   const categories = await getCategories();
 
   return (
-    <div className="space-y-9">
-      <div className="flex justify-between">
+    <div className='space-y-9'>
+      <div className='flex justify-between'>
         <TabGroup
-          path="/error-handling"
+          path='/error-handling'
           items={[
             {
-              text: 'Home',
+              text: 'Home'
             },
-            ...categories.map((x) => ({
+            ...categories.map(x => ({
               text: x.name,
-              slug: x.slug,
-            })),
+              slug: x.slug
+            }))
           ]}
         />
 
-        <div className="self-start">
+        <div className='self-start'>
           <ClickCounter />
         </div>
       </div>

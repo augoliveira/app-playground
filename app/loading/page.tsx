@@ -1,4 +1,4 @@
-import { ExternalLink } from '#/ui/external-link';
+import { ExternalLink } from "#/ui/external-link";
 
 export default function Page() {
   return (
@@ -12,10 +12,12 @@ export default function Page() {
           loading skeleton immediately while data for category page loads before
           being streamed in.
         </li>
+
         <li>
           Shared layouts remain interactive while nested layouts or pages load.
           Try clicking the counter while the children load.
         </li>
+
         <li>
           Navigation is interruptible. Try navigating to one category, then
           clicking a second category before the first one has loaded.
@@ -26,6 +28,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming">
           Docs
         </ExternalLink>
+
         <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/loading">
           Code
         </ExternalLink>

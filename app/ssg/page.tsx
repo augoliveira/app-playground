@@ -22,7 +22,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#static-data-fetching">
           Docs
         </ExternalLink>
-        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/ssg">
+        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/ssg'>
           Code
         </ExternalLink>
       </div>

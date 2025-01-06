@@ -3,11 +3,14 @@ import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
+import StyledComponentsRegistry from './styling/styled-components/registry';
+import { GlobalStyle } from '#/styles';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Next.js App Router',
-    template: '%s | Next.js App Router',
+    default: "AGÊNCIA UP.EXPERT",
+
+    template: "MARKETIGN DIGITAL EM BRASILIA | (61) 9 8669-2775",
   },
   metadataBase: new URL('https://app-router.vercel.app'),
   description:
@@ -42,7 +45,11 @@ export default function RootLayout({
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black p-3.5 lg:p-6">{children}</div>
+              <div className="rounded-lg bg-black p-3.5 lg:p-6">
+                <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+
+                <GlobalStyle />
+              </div>
             </div>
             <Byline />
           </div>

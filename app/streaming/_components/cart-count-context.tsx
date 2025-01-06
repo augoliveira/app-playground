@@ -8,13 +8,13 @@ const CartCountContext = React.createContext<
 
 export function CartCountProvider({
   children,
-  initialCartCount,
+  initialCartCount
 }: {
   children: React.ReactNode;
   initialCartCount: number;
 }) {
   const [optimisticCartCount, setOptimisticCartCount] = useState<null | number>(
-    null,
+    null
   );
 
   const count =

@@ -13,7 +13,7 @@ export default async function Layout({
 
   return (
     <Boundary
-      labels={['marketing layout']}
+      labels={["marketing layout"]}
       color="violet"
       animateRerendering={false}
     >
@@ -23,14 +23,18 @@ export default async function Layout({
             path="/route-groups"
             items={[
               {
-                text: 'Home',
+                text: "Home",
               },
+
               ...categories.map((x) => ({
                 text: x.name,
+
                 slug: x.slug,
               })),
-              { text: 'Checkout', slug: 'checkout' },
-              { text: 'Blog', slug: 'blog' },
+
+              { text: "Checkout", slug: "checkout" },
+
+              { text: "Blog", slug: "blog" },
             ]}
           />
 

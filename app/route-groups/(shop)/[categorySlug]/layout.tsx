@@ -14,22 +14,22 @@ export default async function Layout(props: {
   const categories = await getCategories({ parent: params.categorySlug });
 
   return (
-    <div className="space-y-9">
-      <div className="flex justify-between">
+    <div className='space-y-9'>
+      <div className='flex justify-between'>
         <TabGroup
           path={`/route-groups/${category.slug}`}
           items={[
             {
-              text: 'All',
+              text: 'All'
             },
             ...categories.map((x) => ({
               text: x.name,
-              slug: x.slug,
-            })),
+              slug: x.slug
+            }))
           ]}
         />
 
-        <div className="self-start">
+        <div className='self-start'>
           <ClickCounter />
         </div>
       </div>

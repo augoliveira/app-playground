@@ -1,8 +1,10 @@
-import { Tab } from '#/ui/tab';
+import { Tab } from "#/ui/tab";
 
 export type Item = {
   text: string;
+
   slug?: string;
+
   segment?: string;
   parallelRoutesKey?: string;
 };

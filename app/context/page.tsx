@@ -1,4 +1,4 @@
-import { ExternalLink } from '#/ui/external-link';
+import { ExternalLink } from "#/ui/external-link";
 
 export default function Page() {
   return (
@@ -10,6 +10,7 @@ export default function Page() {
           This example uses context to share state between Client Components
           that cross the Server/Client Component boundary.
         </li>
+
         <li>
           Try incrementing the counter and navigating between pages. Note how
           the counter state is shared across the app even though they are inside
@@ -21,6 +22,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/getting-started/react-essentials#context">
           Docs
         </ExternalLink>
+
         <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/context">
           Code
         </ExternalLink>

@@ -1,10 +1,15 @@
-'use client';
+/* eslint-disable @typescript-eslint/ban-types */
+"use client";
 
-import ms from 'ms';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
+
+import ms from "ms";
 
 // https://github.com/streamich/react-use/blob/master/src/useInterval.ts
+
+// eslint-disable-next-line @typescript-eslint/ban-types
 const useInterval = (callback: Function, delay?: number | null) => {
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   const savedCallback = useRef<Function>(() => {});
 
   useEffect(() => {
@@ -14,6 +19,7 @@ const useInterval = (callback: Function, delay?: number | null) => {
   useEffect(() => {
     if (delay !== null) {
       const interval = setInterval(() => savedCallback.current(), delay || 0);
+
       return () => clearInterval(interval);
     }
 
@@ -25,11 +31,13 @@ export function RenderedTimeAgo({ timestamp }: { timestamp: number }) {
   const [msAgo, setMsAgo] = useState<number>(0);
 
   // update on page change
+
   useEffect(() => {
     setMsAgo(Date.now() - timestamp);
   }, [timestamp]);
 
   // update every second
+
   useInterval(() => {
     setMsAgo(Date.now() - timestamp);
   }, 1000);
@@ -46,8 +54,8 @@ export function RenderedTimeAgo({ timestamp }: { timestamp: number }) {
             suppressHydrationWarning={true}
             className="font-semibold tabular-nums text-gray-900"
           >
-            {msAgo >= 1000 ? ms(msAgo) : '0s'}
-          </span>{' '}
+            {msAgo >= 1000 ? ms(msAgo) : "0s"}
+          </span>{" "}
           <span className="text-gray-600">ago</span>
         </>
       ) : null}

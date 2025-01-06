@@ -1,4 +1,4 @@
-import { ExternalLink } from '#/ui/external-link';
+import { ExternalLink } from "#/ui/external-link";
 
 export default function Page() {
   return (
@@ -11,6 +11,7 @@ export default function Page() {
           layouts preserve state, remain interactive, and do not re-render. Two
           or more layouts can also be nested.
         </li>
+
         <li>Try navigating between categories and sub categories.</li>
       </ul>
 
@@ -18,6 +19,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts">
           Docs
         </ExternalLink>
+
         <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/layouts">
           Code
         </ExternalLink>

@@ -3,8 +3,8 @@ import { ExternalLink } from '#/ui/external-link';
 
 export default function Page() {
   return (
-    <div className="prose prose-sm prose-invert max-w-none">
-      <h1 className="text-xl font-bold">Error Handling</h1>
+    <div className='prose prose-sm prose-invert max-w-none'>
+      <h1 className='text-xl font-bold'>Error Handling</h1>
 
       <ul>
         <li>
@@ -19,13 +19,13 @@ export default function Page() {
         </li>
       </ul>
 
-      <div className="flex gap-2">
+      <div className='flex gap-2'>
         <BuggyButton />
 
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/routing/error-handling">
           Docs
         </ExternalLink>
-        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/error-handling">
+        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/error-handling'>
           Code
         </ExternalLink>
       </div>

@@ -9,7 +9,7 @@ const randomNumber = (min: number, max: number) =>
 
 export function RandomPostTab({ path }: { path: string }) {
   const [post, setPost] = React.useState<null | { text: string; slug: string }>(
-    null,
+    null
   );
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export function RandomPostTab({ path }: { path: string }) {
     <div
       className={clsx('inline-flex transition', {
         'opacity-0': !post,
-        'opacity-100': post,
+        'opacity-100': post
       })}
     >
       {post ? (

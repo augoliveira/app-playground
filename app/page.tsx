@@ -1,5 +1,4 @@
-import { demos } from '#/lib/demos';
-import Link from 'next/link';
+import HeroHome from "../ui/Components/HeroHome/parallax";
 
 export default function Page() {
   return (
@@ -27,7 +26,7 @@ export default function Page() {
                       </div>
 
                       {item.description ? (
-                        <div className="line-clamp-3 text-sm text-gray-400 group-hover:text-gray-300">
+                        <div className="text-sm text-gray-400 line-clamp-3 group-hover:text-gray-300">
                           {item.description}
                         </div>
                       ) : null}

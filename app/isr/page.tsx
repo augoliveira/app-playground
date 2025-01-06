@@ -1,4 +1,4 @@
-import { ExternalLink } from '#/ui/external-link';
+import { ExternalLink } from "#/ui/external-link";
 
 export default function Page() {
   return (
@@ -21,6 +21,7 @@ export default function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#revalidating-data">
           Docs
         </ExternalLink>
+
         <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/isr">
           Code
         </ExternalLink>

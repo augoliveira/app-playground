@@ -28,10 +28,12 @@ export default async function Layout({
           path="/hooks"
           items={[
             {
-              text: 'Home',
+              text: "Home",
             },
+
             ...categories.map((x) => ({
               text: x.name,
+
               slug: x.slug,
             })),
           ]}

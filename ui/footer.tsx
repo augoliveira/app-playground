@@ -1,10 +1,13 @@
-'use client';
+/* eslint-disable react/no-unknown-property */
+"use client";
 
 export default function Footer({
   reactVersion,
+
   nextVersion,
 }: {
   reactVersion: string;
+
   nextVersion: string;
 }) {
   return (
@@ -13,9 +16,12 @@ export default function Footer({
         {`
           .power-by {
             color: rgb(82 82 91);
+
             display: inline-flex;
+
             align-items: center;
           }
+
           .power-by-text {
             margin-right: 0.25rem;
           }
@@ -24,6 +30,7 @@ export default function Footer({
 
       <span className="power-by">
         <span className="power-by-text">Powered by</span>
+
         <svg height="20" viewBox="0 0 283 64" fill="none">
           <path
             fill="currentColor"
@@ -34,6 +41,7 @@ export default function Footer({
 
       <div className="flex gap-x-6 text-sm text-gray-600">
         <div>React: {reactVersion}</div>
+
         <div>Next: {nextVersion}</div>
       </div>
     </div>

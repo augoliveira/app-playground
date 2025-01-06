@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { demos, type Item } from '#/lib/demos';
 import { NextLogoDark } from '#/ui/next-logo';
@@ -18,6 +18,7 @@ export function GlobalNav() {
         <Link
           href="/"
           className="group flex w-full items-center gap-x-2.5"
+          aria-label="Read more about Seminole tax hike"
           onClick={close}
         >
           <div className="h-7 w-7 rounded-full">
@@ -45,8 +46,8 @@ export function GlobalNav() {
       </button>
 
       <div
-        className={clsx('overflow-y-auto lg:static lg:block', {
-          'fixed inset-x-0 bottom-0 top-14 mt-px bg-black': isOpen,
+        className={clsx("overflow-y-auto lg:static lg:block", {
+          "fixed inset-x-0 bottom-0 top-14 mt-px bg-black": isOpen,
           hidden: !isOpen,
         })}
       >
@@ -87,11 +88,11 @@ function GlobalNavItem({
       onClick={close}
       href={`/${item.slug}`}
       className={clsx(
-        'block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300',
+        "block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300",
         {
-          'text-gray-400 hover:bg-gray-800': !isActive,
-          'text-white': isActive,
-        },
+          "text-gray-400 hover:bg-gray-800": !isActive,
+          "text-white": isActive,
+        }
       )}
     >
       {item.name}

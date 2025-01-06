@@ -2,8 +2,8 @@ import { ExternalLink } from '#/ui/external-link';
 
 export default async function Page() {
   return (
-    <div className="prose prose-sm prose-invert max-w-none">
-      <h1 className="text-xl font-bold">Streaming with Suspense</h1>
+    <div className='prose prose-sm prose-invert max-w-none'>
+      <h1 className='text-xl font-bold'>Streaming with Suspense</h1>
 
       <ul>
         <li>
@@ -29,7 +29,7 @@ export default async function Page() {
         <ExternalLink href="https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming">
           Docs
         </ExternalLink>
-        <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/streaming">
+        <ExternalLink href='https://github.com/vercel/app-playground/tree/main/app/streaming'>
           Code
         </ExternalLink>
       </div>

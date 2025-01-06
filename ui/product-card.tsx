@@ -11,9 +11,11 @@ import Link from 'next/link';
 
 export const ProductCard = ({
   product,
+
   href,
 }: {
   product: Product;
+
   href: string;
 }) => {
   const price = dinero(product.price as DineroSnapshot<number>);
@@ -27,6 +29,7 @@ export const ProductCard = ({
               <ProductBestSeller />
             </div>
           ) : null}
+
           <Image
             src={`/${product.image}`}
             width={400}
