@@ -1,6 +1,5 @@
 {
   "private": true,
-  "packageManager": "pnpm@8.2.0",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -18,35 +17,36 @@
     "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "@heroicons/react": "2.1.3",
+    "@heroicons/react": "2.2.0",
     "clsx": "2.1.1",
-    "date-fns": "3.6.0",
+    "date-fns": "4.1.0",
     "dinero.js": "2.0.0-alpha.10",
     "ms": "3.0.0-canary.1",
-    "next": "15.0.0-canary.193",
-    "react": "19.0.0-rc-cd22717c-20241013",
-    "react-dom": "19.0.0-rc-cd22717c-20241013",
+    "next": "15.1.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "server-only": "0.0.1",
-    "styled-components": "6.1.8",
+    "styled-components": "6.1.14",
     "use-count-up": "3.0.1",
-    "vercel": "34.0.0"
+    "vercel": "39.2.5"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "0.5.7",
-    "@tailwindcss/typography": "0.5.12",
+    "@tailwindcss/forms": "0.5.9",
+    "@tailwindcss/typography": "0.5.15",
     "@types/ms": "0.7.34",
-    "@types/node": "20.12.7",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
     "@vercel/git-hooks": "1.0.0",
-    "autoprefixer": "10.4.19",
-    "eslint": "9.0.0",
-    "eslint-config-next": "14.2.2",
-    "lint-staged": "15.2.2",
-    "postcss": "8.4.38",
-    "prettier": "3.2.5",
-    "prettier-plugin-tailwindcss": "0.5.14",
-    "tailwindcss": "3.4.3",
-    "typescript": "5.4.5"
-  }
+    "autoprefixer": "10.4.20",
+    "eslint": "9.17.0",
+    "eslint-config-next": "15.1.3",
+    "lint-staged": "15.3.0",
+    "postcss": "8.4.49",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "0.6.9",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
